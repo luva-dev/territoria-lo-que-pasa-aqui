@@ -86,159 +86,171 @@ footer{text-align:center;color:var(--ink3);font-size:13px;padding:0 5vw 30px}
 <header>
   <div class="top">
     <div class="brand">TerritorIA <span>· Lo que pasa aquí</span></div>
-    <div class="demo">Demo · datos ficticios</div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <div class="demo" data-i18n="badge"></div>
+      <button id="langBtn" style="font:inherit;font-size:13px;font-weight:700;border:1px solid rgba(255,255,255,.4);background:transparent;color:#fff;border-radius:999px;padding:4px 12px;cursor:pointer">EN</button>
+    </div>
   </div>
   <nav id="nav">
-    <button data-v="inicio" class="on">Cómo funciona</button>
-    <button data-v="formar">1 · Formar</button>
-    <button data-v="usar">2 · Usar una herramienta</button>
-    <button data-v="conectar">3 · Interconectar</button>
+    <button data-v="inicio" class="on" data-i18n="nav1"></button>
+    <button data-v="formar" data-i18n="nav2"></button>
+    <button data-v="usar" data-i18n="nav3"></button>
+    <button data-v="conectar" data-i18n="nav4"></button>
   </nav>
 </header>
 <main>
-
-<section id="v-inicio">
-  <div class="k">Equilibria · Perú · Amazonas</div>
-  <h1>Cada lideresa construye su herramienta. Todas alimentan la misma base.</h1>
-  <p class="lead">En la Amazonía peruana, la violencia contra las mujeres y las necesidades de salud sexual y reproductiva están normalizadas: no se nombran ni se registran. TerritorIA forma a lideresas comunitarias para que construyan, con IA, sus propias herramientas para hacerlas visibles. Cada herramienta es distinta, porque cada comunidad lo es, pero todas guardan los datos anónimos con el mismo formato y en una sola base. Así nace una red de información comunitaria para la salud pública.</p>
-  <div class="mom">
-    <div class="m uno" data-go="formar">
-      <span class="tag">Momento 1 · Formar</span>
-      <h3>La lideresa construye su herramienta</h3>
-      <ul><li>Ciclo TerritorIA de 4 semanas</li><li>Parte de lo que pasa en su comunidad</li><li>Con IA arma su encuesta, su página y sus mensajes, a su manera</li></ul>
-    </div>
-    <div class="arr">→</div>
-    <div class="m dos" data-go="conectar">
-      <span class="tag">Momento 2 · Usar e interconectar</span>
-      <h3>Las herramientas forman una red</h3>
-      <ul><li>La comunidad responde de forma anónima</li><li>Todas las herramientas escriben en la misma base, con el mismo formato</li><li>La red de salud ve un tablero por distrito</li></ul>
-    </div>
-  </div>
-  <div class="nota">No es un canal de denuncia ni reemplaza a la Línea 100 o al CEM: los promueve. Hace visible lo que hoy no llega a ningún servicio.</div>
-  <div class="nota ia"><b>Dónde entra la IA:</b> ayuda a la lideresa a construir su herramienta, propone preguntas que no revictimizan, transcribe audios, tacha datos personales antes de guardar y redacta informes agregados. <b>No</b> decide qué es violencia, no identifica personas, no diagnostica casos.</div>
-</section>
-
-<section id="v-formar" class="hide">
-  <div class="k">Momento 1</div>
-  <h1>Formar: cada lideresa construye su herramienta</h1>
-  <p class="lead">El método de TerritorIA, probado en 2026 con 23 líderes de 6 países (11 certificados, cada uno con su producto funcionando), aplicado a un solo propósito: hacer visible lo que está normalizado.</p>
-  <div class="ciclo">
-    <div><b>Semana 1 · Mapear</b><span>Dibuja cómo circula hoy la violencia en su comunidad: quién se entera, quién calla, dónde se pierde.</span></div>
-    <div><b>Semana 2 · Prototipar</b><span>Con IA arma su herramienta desde la plantilla común: encuesta, página, mensajes, en su lengua.</span></div>
-    <div><b>Semana 3 · Compartir</b><span>La prueba con su organización y la ajusta con la cohorte.</span></div>
-    <div><b>Semana 4 · Sostener</b><span>La publica, queda conectada a la base común y define quién la mantiene.</span></div>
-  </div>
-  <h2 style="margin-top:22px">Tres herramientas, tres comunidades, una misma base</h2>
-  <p style="color:var(--ink2)">Ejemplos ficticios de lo que construyen tres lideresas al terminar el ciclo.</p>
-  <div class="grid g3">
-    <div class="tool"><div class="hd" style="background:#5b3fb8"><small>Organización de mujeres de Río Alto</small><div>Voces de Río Alto</div></div>
-      <div class="bd"><p>Encuesta anónima por WhatsApp al número de la organización.</p><ul><li>6 preguntas en castellano</li><li>Informe mensual para la asamblea</li><li>Mensajes para grupos de WhatsApp</li></ul><p class="who">Canal principal: WhatsApp</p></div>
-      <div class="ft">✓ Escribe en la base común</div></div>
-    <div class="tool"><div class="hd" style="background:#1d7a5f"><small>Lideresas de Quebrada Verde</small><div>Radio Quebrada Verde</div></div>
-      <div class="bd"><p>Spots en la radio comunal que invitan a responder por audio.</p><ul><li>Preguntas en castellano y awajún</li><li>La IA transcribe los audios</li><li>Spot que nombra lo encontrado</li></ul><p class="who">Canal principal: radio y audio</p></div>
-      <div class="ft">✓ Escribe en la base común</div></div>
-    <div class="tool"><div class="hd" style="background:#c0612b"><small>Promotoras de Santa Rosa</small><div>Ruta Santa Rosa</div></div>
-      <div class="bd"><p>Encuesta en papel en asambleas y página con los servicios del distrito.</p><ul><li>La promotora carga las respuestas</li><li>Ruta local: Línea 100, CEM, puesto de salud</li><li>Afiche para el local comunal</li></ul><p class="who">Canal principal: papel y asamblea</p></div>
-      <div class="ft">✓ Escribe en la base común</div></div>
-  </div>
-  <div class="nota ia"><b>Lo que hace distinta a la plataforma:</b> no entrega una app cerrada. Entrega una plantilla abierta y el método para que cada lideresa la adapte a su comunidad, sin perder la conexión con las demás.</div>
-  <button class="btn" onclick="ver('usar')">Ver una herramienta por dentro →</button>
-</section>
-
-<section id="v-usar" class="hide">
-  <div class="k">Momento 2 · Usar</div>
-  <h1>Una herramienta por dentro: Voces de Río Alto</h1>
-  <p class="lead">Lo que hace la lideresa cada mes con la herramienta que construyó.</p>
-  <div class="steps" id="dsteps">
-    <button data-s="a" class="on">a. Preguntar</button>
-    <button data-s="b">b. Recibir respuestas anónimas</button>
-    <button data-s="c">c. Nombrar lo que aparece</button>
-  </div>
-  <div id="d-a" class="card">
-    <h2>¿Qué quiere conocer la organización este mes?</h2>
-    <p style="color:var(--ink2)">Tema elegido en asamblea: <b>violencia en la pareja y control del dinero</b>.</p>
-    <button class="btn" id="sugerir">Sugerir preguntas con IA</button>
-    <div id="preguntas"></div>
-  </div>
-  <div id="d-b" class="card hide">
-    <h2>Respuestas por WhatsApp, papel y audio</h2>
-    <p style="color:var(--ink2)">12 respuestas · número exclusivo de la organización · no se guarda quién envía</p>
-    <div class="chat" id="chat"></div>
-    <div class="nota ia"><b>La IA</b> transcribe audios y tacha nombres, teléfonos y lugares exactos <b>antes de guardar</b>. La lideresa confirma.</div>
-  </div>
-  <div id="d-c" class="card hide">
-    <h2>Informe del mes</h2>
-    <div id="informe"></div>
-  </div>
-</section>
-
-<section id="v-conectar" class="hide">
-  <div class="k">Momento 2 · Interconectar</div>
-  <h1>Herramientas distintas, una sola base anónima</h1>
-  <p class="lead">Un repositorio abierto, una base de datos común y un formato compartido. Cada herramienta se ve como su comunidad quiere, pero guarda los datos igual.</p>
-  <div class="flujo">
-    <div class="col">
-      <div class="box">📱 Voces de Río Alto</div>
-      <div class="box">📻 Radio Quebrada Verde</div>
-      <div class="box">📝 Ruta Santa Rosa</div>
-      <div class="box" style="color:var(--ink3)">+ las de cada nueva cohorte</div>
-    </div>
-    <div class="arr">→</div>
-    <div class="db"><b>Base común anónima</b><span>un solo formato · sin datos personales · cada organización es dueña de lo suyo</span></div>
-    <div class="arr">→</div>
-    <div class="col out">
-      <div class="box"><b>Red de salud y DIRESA</b><br>tablero por distrito</div>
-      <div class="box"><b>Establecimiento de salud</b><br>boletín de su ámbito</div>
-      <div class="box"><b>Organizaciones</b><br>su propio informe y la comparación con otras</div>
-    </div>
-  </div>
-  <div class="card">
-    <h3>El formato común (lo único que todas las herramientas comparten)</h3>
-    <table>
-      <tr><th>Campo</th><th>Ejemplo</th></tr>
-      <tr><td><code>distrito</code></td><td>Río Alto</td></tr>
-      <tr><td><code>mes</code></td><td>2026-11</td></tr>
-      <tr><td><code>tema</code></td><td>control del dinero</td></tr>
-      <tr><td><code>respuesta</code></td><td>nunca · a veces · seguido · prefiero no responder</td></tr>
-      <tr><td><code>canal</code></td><td>WhatsApp · audio · papel</td></tr>
-      <tr><td><code>organizacion</code></td><td>código de la organización, no de la persona</td></tr>
-    </table>
-    <p class="no" style="margin-top:10px">Nunca se guarda: nombre, teléfono, lugar exacto, audio original.</p>
-  </div>
-  <h2>Tablero territorial · noviembre 2026</h2>
-  <div class="grid g3" id="kpis"></div>
-  <div class="card">
-    <h3>Porcentaje que dice que la situación es común en su comunidad</h3>
-    <div style="overflow:auto"><table id="tabla"></table></div>
-    <div class="nota">Regla de privacidad: ninguna celda con menos de 5 respuestas se publica.</div>
-  </div>
-  <div class="card">
-    <h3>Boletín para la red de salud</h3>
-    <div class="nota ia"><b>Borrador de la IA</b> · revisado por las organizaciones antes de enviarse</div>
-    <p>Tres organizaciones levantaron 74 respuestas anónimas en 5 distritos. Lo más mencionado es el control del dinero por la pareja, que la Ley 30364 reconoce como violencia económica. En Quebrada Verde, 3 de cada 4 personas que respondieron dicen que una vecina no sabría a dónde acudir. Estos datos no son casos ni denuncias: muestran lo que la comunidad reconoce y que no llega al establecimiento.</p>
-  </div>
-</section>
+<section id="v-inicio"></section>
+<section id="v-formar" class="hide"></section>
+<section id="v-usar" class="hide"></section>
+<section id="v-conectar" class="hide"></section>
 </main>
-<footer>TerritorIA · Equilibria Conservación para la Paz S.A.C. · Demo con datos ficticios · Código abierto (MIT)</footer>
+<footer data-i18n="footer"></footer>
 <script>
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
-function ver(v){$$('main>section').forEach(s=>s.classList.toggle('hide',s.id!=='v-'+v));$$('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));window.scrollTo(0,0);if(location.hash!=='#'+v)history.replaceState(null,'','#'+v)}
-$$('#nav button').forEach(b=>b.onclick=()=>ver(b.dataset.v));
-$$('[data-go]').forEach(c=>c.onclick=()=>ver(c.dataset.go));
-const vh=()=>['formar','usar','conectar'].includes(location.hash.slice(1))?location.hash.slice(1):'inicio';
-window.addEventListener('hashchange',()=>ver(vh()));ver(vh());
-function paso(s){['a','b','c'].forEach(x=>$('#d-'+x).classList.toggle('hide',x!==s));$$('#dsteps button').forEach(b=>b.classList.toggle('on',b.dataset.s===s))}
-$$('#dsteps button').forEach(b=>b.onclick=()=>paso(b.dataset.s));
-const PREG=["En tu comunidad, ¿es común que la pareja controle el dinero que gana la mujer?","¿Es común que la pareja no deje a la mujer trabajar o estudiar?","¿Es común que una mujer reciba insultos o humillaciones de su pareja?","¿Es común que una mujer tenga que pedir permiso para ir al puesto de salud?","¿Las jóvenes saben dónde informarse sobre salud sexual y reproductiva?","Si a una vecina le pasa algo de esto, ¿sabe a dónde acudir?"];
-$('#sugerir').onclick=()=>{$('#preguntas').innerHTML=`<div class="nota ia"><b>Propuesta de la IA</b> · la lideresa decide cuáles quedan. Preguntas sobre la comunidad, no sobre la persona; sin pedir hechos ni nombres.</div><ol class="q">${PREG.map(p=>`<li>${p}<div class="opts">Nunca · A veces · Seguido · Prefiero no responder</div></li>`).join('')}</ol><button class="btn sec" onclick="paso('b')">Publicar en WhatsApp y ver respuestas →</button>`};
-const MSGS=[{t:"1: Seguido. 2: A veces. 3: Seguido. 4: Seguido. 5: No. 6: No sé"},{t:"1 seguido, 3 a veces, 6 no",a:1},{t:"Soy <span class='tach'>Rosa Pérez</span>, mi número es <span class='tach'>987 654 321</span>. 1: seguido, 2: seguido, 4: a veces",f:"Nombre y teléfono tachados antes de guardar"},{t:"1 a veces 2 nunca 3 a veces 4 nunca 5 sí 6 sí"},{t:"En mi casa no, pero en la comunidad sí es seguido lo del dinero (1). Lo demás a veces",a:1},{t:"1: Seguido. 3: Seguido. 4: Seguido. 6: No"},{t:"Prefiero no responder la 3. 1 seguido, 5 no"},{t:"En <span class='tach'>la chacra de los Huamán</span> pasa siempre. 1 seguido, 2 seguido",f:"Lugar exacto tachado antes de guardar"},{t:"1 nunca, 2 nunca, 3 a veces, 5 sí, 6 sí"},{t:"1: a veces. 4: seguido. 6: no sé a dónde ir",a:1},{t:"1 seguido 2 a veces 3 seguido 4 a veces 5 no 6 no"},{t:"En papel, cargada por la lideresa: 1 seguido, 3 a veces, 4 seguido"}];
-$('#chat').innerHTML=MSGS.map((m,i)=>`<div class="msg"><div class="who">Respuesta ${i+1} · anónima${m.a?' · audio transcrito':''}</div>${m.t}${m.f?`<div class="flag">⚑ ${m.f}</div>`:''}</div>`).join('')+`<div style="text-align:right"><button class="btn sec" onclick="paso('c')">Generar informe →</button></div>`;
-const INF=[{p:"La pareja controla el dinero de la mujer",n:12,s:7,tipo:"Violencia económica"},{p:"Insultos o humillaciones de la pareja",n:10,s:4,tipo:"Violencia psicológica"},{p:"Pedir permiso para ir al puesto de salud",n:8,s:5,tipo:"Violencia psicológica (control)"},{p:"No dejan trabajar o estudiar",n:6,s:2,tipo:"Violencia económica"},{p:"Una vecina sabría a dónde acudir",n:8,s:2,tipo:null}];
-$('#informe').innerHTML=`<table><tr><th>Situación</th><th>n</th><th>"Seguido"</th><th></th><th>Cómo lo nombra la ley</th></tr>`+INF.map(r=>{const p=Math.round(r.s/r.n*100);return `<tr><td>${r.p}</td><td>${r.n}</td><td>${r.s} (${p} %)</td><td><div class="bar"><i style="width:${p}%"></i></div></td><td>${r.tipo?`<span class="tipo">${r.tipo}</span>`:'<span class="hid">acceso a servicios</span>'}</td></tr>`}).join('')+`</table><div class="nota ia" style="margin-top:14px"><b>Lectura de la IA (borrador):</b> 7 de 12 dicen que es común que la pareja controle el dinero; la Ley 30364 lo reconoce como violencia económica. Solo 2 de 8 creen que una vecina sabría a dónde acudir.</div><div class="nota">La organización revisa el informe, lo lleva a su asamblea y decide qué nombrar. Los datos, ya sin nada personal, pasan a la base común.</div><button class="btn" onclick="ver('conectar')">Ver cómo se conecta con las demás →</button>`;
-const DIST=["Río Alto","Quebrada Verde","San Isidro","Santa Rosa","Nuevo Edén"],TEMAS=["Control del dinero","Insultos y humillaciones","Pedir permiso para ir a salud","No sabría a dónde acudir"];
+let L='es';try{L=localStorage.getItem('lpa-lang')||'es'}catch(e){}
+const T={
+es:{
+badge:"Demo · datos ficticios",nav1:"Cómo funciona",nav2:"1 · Formar",nav3:"2 · Usar una herramienta",nav4:"3 · Interconectar",
+footer:"TerritorIA · Equilibria Conservación para la Paz S.A.C. · Demo con datos ficticios · Código abierto (licencia MIT)",
+inicio:`<div class="k">Equilibria y Yunkawasi · Perú · Amazonas</div>
+<h1>Cada lideresa construye su herramienta y todas alimentan la misma base</h1>
+<p class="lead">En las comunidades rurales de Amazonas, la violencia contra las mujeres y las necesidades de salud sexual y reproductiva se viven como algo normal, por eso casi no se nombran ni se registran. "Lo que pasa aquí" es un conjunto de herramientas abiertas para que lideresas comunitarias hagan visible esa realidad. Se enseña a través de TerritorIA, el programa de Equilibria que forma a líderes comunitarios en el uso de la inteligencia artificial. Cada lideresa construye una herramienta distinta, adaptada a su comunidad, y todas guardan las respuestas anónimas con el mismo formato y en una sola base de datos.</p>
+<div class="mom">
+<div class="m uno" data-go="formar"><span class="tag">Momento 1 · Formar</span><h3>La lideresa construye su herramienta</h3><ul><li>Sigue el ciclo de TerritorIA durante 4 semanas</li><li>Parte de lo que pasa en su comunidad</li><li>Con ayuda de la IA arma su encuesta, su página y sus mensajes</li></ul></div>
+<div class="arr">→</div>
+<div class="m dos" data-go="conectar"><span class="tag">Momento 2 · Usar e interconectar</span><h3>Las herramientas forman una red</h3><ul><li>La comunidad responde sin dar su nombre</li><li>Todas las herramientas guardan las respuestas en la misma base</li><li>La red de salud recibe un resumen por distrito</li></ul></div>
+</div>
+<div class="nota">Las herramientas no reciben denuncias ni reemplazan a la Línea 100 o al Centro Emergencia Mujer. Los difunden, y muestran lo que hoy no llega a ningún servicio.</div>
+<div class="nota ia"><b>Qué hace la IA.</b> Ayuda a la lideresa a construir su herramienta, propone preguntas que no revictimizan, transcribe audios, oculta datos personales antes de guardar y redacta informes con datos agregados. La IA no decide qué es violencia, no identifica a nadie y no evalúa casos. La lideresa y su organización revisan y aprueban todo.</div>`,
+formar:`<div class="k">Momento 1</div><h1>Formar: cada lideresa construye su herramienta</h1>
+<p class="lead">En abril de 2026, Equilibria aplicó el ciclo de TerritorIA con 23 líderes de 6 países. Once se certificaron y cada uno presentó una herramienta propia que funcionaba. Aquí el mismo ciclo se dedica a un solo propósito: hacer visible lo que la comunidad vive como normal.</p>
+<div class="ciclo">
+<div><b>Semana 1 · Mapear</b><span>La lideresa dibuja cómo circula hoy la violencia en su comunidad: quién se entera, quién calla y dónde se pierde.</span></div>
+<div><b>Semana 2 · Prototipar</b><span>Con ayuda de la IA arma su herramienta a partir de la plantilla común: encuesta, página y mensajes en su lengua.</span></div>
+<div><b>Semana 3 · Compartir</b><span>La prueba con su organización y la ajusta con las demás lideresas del grupo.</span></div>
+<div><b>Semana 4 · Sostener</b><span>La publica, la conecta a la base común y define quién la va a mantener.</span></div>
+</div>
+<h2 style="margin-top:22px">Tres herramientas, tres comunidades, una misma base</h2>
+<p style="color:var(--ink2)">Ejemplos ficticios de lo que construyen tres lideresas al terminar el ciclo.</p>
+<div class="grid g3">
+<div class="tool"><div class="hd" style="background:#5b3fb8"><small>Organización de mujeres de Río Alto</small><div>Voces de Río Alto</div></div><div class="bd"><p>Encuesta anónima por WhatsApp al número de la organización.</p><ul><li>6 preguntas en castellano</li><li>Informe mensual para la asamblea</li><li>Mensajes para grupos de WhatsApp</li></ul><p class="who">Canal principal: WhatsApp</p></div><div class="ft">✓ Guarda las respuestas en la base común</div></div>
+<div class="tool"><div class="hd" style="background:#1d7a5f"><small>Lideresas de Quebrada Verde</small><div>Radio Quebrada Verde</div></div><div class="bd"><p>Mensajes en la radio comunal que invitan a responder por audio.</p><ul><li>Preguntas en castellano y awajún</li><li>La IA transcribe los audios</li><li>Un mensaje radial que nombra lo encontrado</li></ul><p class="who">Canal principal: radio y audio</p></div><div class="ft">✓ Guarda las respuestas en la base común</div></div>
+<div class="tool"><div class="hd" style="background:#c0612b"><small>Promotoras de Santa Rosa</small><div>Ruta Santa Rosa</div></div><div class="bd"><p>Encuesta en papel en las asambleas y una página con los servicios del distrito.</p><ul><li>La promotora carga las respuestas</li><li>Ruta local con Línea 100, Centro Emergencia Mujer y puesto de salud</li><li>Afiche para el local comunal</li></ul><p class="who">Canal principal: papel y asamblea</p></div><div class="ft">✓ Guarda las respuestas en la base común</div></div>
+</div>
+<div class="nota ia"><b>Qué entrega el programa.</b> Una plantilla abierta y el método para que cada lideresa la adapte a su comunidad, sin perder la conexión con las demás herramientas.</div>
+<button class="btn" data-go="usar">Ver una herramienta por dentro →</button>`,
+usar:`<div class="k">Momento 2 · Usar</div><h1>Una herramienta por dentro: Voces de Río Alto</h1>
+<p class="lead">Lo que hace la lideresa cada mes con la herramienta que construyó.</p>
+<div class="steps" id="dsteps"><button data-s="a" class="on">a. Preguntar</button><button data-s="b">b. Recibir respuestas anónimas</button><button data-s="c">c. Nombrar lo que aparece</button></div>
+<div id="d-a" class="card"><h2>¿Qué quiere conocer la organización este mes?</h2><p style="color:var(--ink2)">Tema elegido en asamblea: <b>violencia en la pareja y control del dinero</b>.</p><button class="btn" id="sugerir">Sugerir preguntas con IA</button><div id="preguntas"></div></div>
+<div id="d-b" class="card hide"><h2>Respuestas por WhatsApp, papel y audio</h2><p style="color:var(--ink2)">12 respuestas · número exclusivo de la organización · no se guarda quién envía</p><div class="chat" id="chat"></div><div class="nota ia"><b>Qué hace la IA.</b> Transcribe los audios y, si alguien menciona un nombre, un teléfono o un lugar exacto, lo oculta antes de guardar. La lideresa confirma cada cambio.</div></div>
+<div id="d-c" class="card hide"><h2>Informe del mes</h2><div id="informe"></div></div>`,
+conectar:`<div class="k">Momento 2 · Interconectar</div><h1>Herramientas distintas, una sola base anónima</h1>
+<p class="lead">Todas las herramientas comparten un repositorio de código abierto, una base de datos y un mismo formato. Cada una se ve como su comunidad quiere, pero guarda los datos de la misma manera.</p>
+<div class="flujo"><div class="col"><div class="box">📱 Voces de Río Alto</div><div class="box">📻 Radio Quebrada Verde</div><div class="box">📝 Ruta Santa Rosa</div><div class="box" style="color:var(--ink3)">+ las de cada nuevo grupo</div></div><div class="arr">→</div><div class="db"><b>Base común anónima</b><span>un solo formato · sin datos personales · cada organización es dueña de sus datos</span></div><div class="arr">→</div><div class="col out"><div class="box"><b>Red de salud y DIRESA</b><br>resumen por distrito</div><div class="box"><b>Puesto de salud</b><br>boletín de su zona</div><div class="box"><b>Organizaciones</b><br>su propio informe y la comparación con otras</div></div></div>
+<div class="card"><h3>El formato común que comparten todas las herramientas</h3><table><tr><th>Campo</th><th>Ejemplo</th></tr><tr><td><code>distrito</code></td><td>Río Alto</td></tr><tr><td><code>mes</code></td><td>2026-11</td></tr><tr><td><code>tema</code></td><td>control del dinero</td></tr><tr><td><code>respuesta</code></td><td>nunca · a veces · seguido · prefiero no responder</td></tr><tr><td><code>canal</code></td><td>WhatsApp · audio · papel</td></tr><tr><td><code>organizacion</code></td><td>código de la organización, nunca de la persona</td></tr></table><p class="no" style="margin-top:10px">Nunca se guarda el nombre, el teléfono, el lugar exacto ni el audio original.</p></div>
+<h2>Resumen por distrito · noviembre 2026</h2><div class="grid g3" id="kpis"></div>
+<div class="card"><h3>Porcentaje de personas que dicen que la situación es común en su comunidad</h3><div style="overflow:auto"><table id="tabla"></table></div><div class="nota">Regla de privacidad: no se publica ninguna cifra basada en menos de 5 respuestas.</div></div>
+<div class="card"><h3>Boletín para la red de salud</h3><div class="nota ia"><b>Borrador de la IA.</b> Las organizaciones lo revisan antes de enviarlo.</div><p>En noviembre, tres organizaciones reunieron 74 respuestas anónimas en 5 distritos. Lo más mencionado es que la pareja controla el dinero de la mujer, algo que la Ley 30364 reconoce como violencia económica. En Quebrada Verde, 3 de cada 4 personas que respondieron creen que una vecina no sabría a dónde acudir. Estos datos no son casos ni denuncias. Muestran lo que la comunidad reconoce como común y que no llega al puesto de salud.</p></div>`,
+sugNota:`<b>Propuesta de la IA.</b> La lideresa decide qué preguntas quedan. Todas preguntan por la comunidad y no por la persona, y ninguna pide hechos ni nombres.`,
+opts:"Nunca · A veces · Seguido · Prefiero no responder",publicar:"Publicar en WhatsApp y ver respuestas →",
+preg:["En tu comunidad, ¿es común que la pareja controle el dinero que gana la mujer?","¿Es común que la pareja no deje a la mujer trabajar o estudiar?","¿Es común que una mujer reciba insultos o humillaciones de su pareja?","¿Es común que una mujer tenga que pedir permiso para ir al puesto de salud?","¿Las jóvenes saben dónde informarse sobre salud sexual y reproductiva?","Si a una vecina le pasa algo de esto, ¿sabe a dónde acudir?"],
+resp:"Respuesta",anon:"anónima",audio:"audio transcrito",generar:"Generar informe →",
+msgs:[{t:"1: Seguido. 2: A veces. 3: Seguido. 4: Seguido. 5: No. 6: No sé"},{t:"1 seguido, 3 a veces, 6 no",a:1},{t:"Soy <span class='tach'>Rosa Pérez</span>, mi número es <span class='tach'>987 654 321</span>. 1: seguido, 2: seguido, 4: a veces",f:"Nombre y teléfono ocultos antes de guardar"},{t:"1 a veces, 2 nunca, 3 a veces, 4 nunca, 5 sí, 6 sí"},{t:"En mi casa no, pero en la comunidad sí es seguido lo del dinero (1). Lo demás, a veces",a:1},{t:"1: Seguido. 3: Seguido. 4: Seguido. 6: No"},{t:"Prefiero no responder la 3. 1 seguido, 5 no"},{t:"En <span class='tach'>la chacra de los Huamán</span> pasa siempre. 1 seguido, 2 seguido",f:"Lugar exacto oculto antes de guardar"},{t:"1 nunca, 2 nunca, 3 a veces, 5 sí, 6 sí"},{t:"1: a veces. 4: seguido. 6: no sé a dónde ir",a:1},{t:"1 seguido, 2 a veces, 3 seguido, 4 a veces, 5 no, 6 no"},{t:"En papel, cargada por la lideresa: 1 seguido, 3 a veces, 4 seguido"}],
+infH:["Situación","n","«Seguido»","","Cómo lo nombra la ley"],
+inf:[["La pareja controla el dinero de la mujer","Violencia económica"],["Insultos o humillaciones de la pareja","Violencia psicológica"],["Pedir permiso para ir al puesto de salud","Violencia psicológica (control)"],["No dejan trabajar o estudiar","Violencia económica"],["Una vecina sabría a dónde acudir",null]],
+acceso:"acceso a servicios",si:"sí",
+lectura:`<b>Lectura de la IA (borrador).</b> 7 de 12 personas dicen que es común que la pareja controle el dinero, y la Ley 30364 lo reconoce como violencia económica. Solo 2 de 8 creen que una vecina sabría a dónde acudir.`,
+revisa:"La organización revisa el informe, lo lleva a su asamblea y decide qué nombrar. Después, los datos sin información personal pasan a la base común.",
+verCon:"Ver cómo se conecta con las demás →",
+kpi:["respuestas anónimas","herramientas conectadas","distritos"],
+dist:"Distrito",temas:["Control del dinero","Insultos y humillaciones","Pedir permiso para ir a salud","No sabría a dónde acudir"],menos:"menos de 5, no se publica"
+},
+en:{
+badge:"Demo · synthetic data",nav1:"How it works",nav2:"1 · Train",nav3:"2 · Use a tool",nav4:"3 · Connect",
+footer:"TerritorIA · Equilibria Conservación para la Paz S.A.C. · Demo with synthetic data · Open source (MIT licence)",
+inicio:`<div class="k">Equilibria and Yunkawasi · Peru · Amazonas</div>
+<h1>Each leader builds her own tool, and all tools feed the same database</h1>
+<p class="lead">In rural communities of Amazonas, violence against women and unmet sexual and reproductive health needs are lived as normal, so they are rarely named or recorded. "Lo que pasa aquí" (What happens here) is a set of open tools that helps women community leaders make this reality visible. It is taught through TerritorIA, Equilibria's programme that trains community leaders to use artificial intelligence. Each leader builds a different tool adapted to her community, and every tool stores anonymous answers in the same format in one database.</p>
+<div class="mom">
+<div class="m uno" data-go="formar"><span class="tag">Stage 1 · Train</span><h3>The leader builds her tool</h3><ul><li>She follows the four-week TerritorIA cycle</li><li>She starts from what happens in her community</li><li>With AI support she builds her survey, her page and her messages</li></ul></div>
+<div class="arr">→</div>
+<div class="m dos" data-go="conectar"><span class="tag">Stage 2 · Use and connect</span><h3>The tools form a network</h3><ul><li>Community members answer without giving their names</li><li>Every tool stores answers in the same database</li><li>The health network receives a summary by district</li></ul></div>
+</div>
+<div class="nota">The tools do not receive reports of violence and do not replace Línea 100 (Peru's free 24-hour helpline) or the Women's Emergency Centres. They promote these services and show what today reaches no service at all.</div>
+<div class="nota ia"><b>What the AI does.</b> It helps the leader build her tool, suggests questions that do not revictimize, transcribes audio, hides personal details before saving and drafts reports with aggregate data. The AI does not decide what counts as violence, does not identify anyone and does not assess cases. The leader and her organization review and approve everything.</div>`,
+formar:`<div class="k">Stage 1</div><h1>Train: each leader builds her tool</h1>
+<p class="lead">In April 2026, Equilibria ran the TerritorIA cycle with 23 leaders from 6 countries. Eleven were certified, and each presented a working tool of their own. Here the same cycle is used for one purpose: making visible what the community treats as normal.</p>
+<div class="ciclo">
+<div><b>Week 1 · Map</b><span>The leader draws how violence is handled in her community today: who finds out, who stays silent and where it gets lost.</span></div>
+<div><b>Week 2 · Prototype</b><span>With AI support she builds her tool from the shared template: a survey, a page and messages in her language.</span></div>
+<div><b>Week 3 · Share</b><span>She tests it with her organization and improves it with the other leaders in the group.</span></div>
+<div><b>Week 4 · Sustain</b><span>She publishes it, connects it to the shared database and decides who will maintain it.</span></div>
+</div>
+<h2 style="margin-top:22px">Three tools, three communities, one database</h2>
+<p style="color:var(--ink2)">Fictional examples of what three leaders build at the end of the cycle.</p>
+<div class="grid g3">
+<div class="tool"><div class="hd" style="background:#5b3fb8"><small>Río Alto women's organization</small><div>Voces de Río Alto</div></div><div class="bd"><p>Anonymous WhatsApp survey sent to the organization's number.</p><ul><li>6 questions in Spanish</li><li>Monthly report for the community assembly</li><li>Messages for WhatsApp groups</li></ul><p class="who">Main channel: WhatsApp</p></div><div class="ft">✓ Stores answers in the shared database</div></div>
+<div class="tool"><div class="hd" style="background:#1d7a5f"><small>Women leaders of Quebrada Verde</small><div>Radio Quebrada Verde</div></div><div class="bd"><p>Community radio messages that invite people to answer by audio.</p><ul><li>Questions in Spanish and Awajún</li><li>The AI transcribes the audio</li><li>A radio message that names what was found</li></ul><p class="who">Main channel: radio and audio</p></div><div class="ft">✓ Stores answers in the shared database</div></div>
+<div class="tool"><div class="hd" style="background:#c0612b"><small>Santa Rosa health promoters</small><div>Ruta Santa Rosa</div></div><div class="bd"><p>Paper survey at assemblies and a page listing the district's services.</p><ul><li>The promoter enters the answers</li><li>Local guide with Línea 100, the Women's Emergency Centre and the health post</li><li>Poster for the community hall</li></ul><p class="who">Main channel: paper and assembly</p></div><div class="ft">✓ Stores answers in the shared database</div></div>
+</div>
+<div class="nota ia"><b>What the programme delivers.</b> An open template and the method for each leader to adapt it to her community while staying connected to the other tools.</div>
+<button class="btn" data-go="usar">See one tool from the inside →</button>`,
+usar:`<div class="k">Stage 2 · Use</div><h1>One tool from the inside: Voces de Río Alto</h1>
+<p class="lead">What the leader does each month with the tool she built.</p>
+<div class="steps" id="dsteps"><button data-s="a" class="on">a. Ask</button><button data-s="b">b. Receive anonymous answers</button><button data-s="c">c. Name what appears</button></div>
+<div id="d-a" class="card"><h2>What does the organization want to learn this month?</h2><p style="color:var(--ink2)">Topic chosen in the assembly: <b>partner violence and control of money</b>.</p><button class="btn" id="sugerir">Suggest questions with AI</button><div id="preguntas"></div></div>
+<div id="d-b" class="card hide"><h2>Answers by WhatsApp, paper and audio</h2><p style="color:var(--ink2)">12 answers · the organization's own number · the sender is never stored</p><div class="chat" id="chat"></div><div class="nota ia"><b>What the AI does.</b> It transcribes audio and, if someone mentions a name, a phone number or an exact place, hides it before saving. The leader confirms each change.</div></div>
+<div id="d-c" class="card hide"><h2>Monthly report</h2><div id="informe"></div></div>`,
+conectar:`<div class="k">Stage 2 · Connect</div><h1>Different tools, one anonymous database</h1>
+<p class="lead">All tools share one open-source code repository, one database and one data format. Each tool looks the way its community wants, but stores data in the same way.</p>
+<div class="flujo"><div class="col"><div class="box">📱 Voces de Río Alto</div><div class="box">📻 Radio Quebrada Verde</div><div class="box">📝 Ruta Santa Rosa</div><div class="box" style="color:var(--ink3)">+ tools from each new group</div></div><div class="arr">→</div><div class="db"><b>Shared anonymous database</b><span>one format · no personal data · each organization owns its data</span></div><div class="arr">→</div><div class="col out"><div class="box"><b>Regional health network</b><br>summary by district</div><div class="box"><b>Health post</b><br>bulletin for its area</div><div class="box"><b>Organizations</b><br>their own report and a comparison with others</div></div></div>
+<div class="card"><h3>The shared format used by every tool</h3><table><tr><th>Field</th><th>Example</th></tr><tr><td><code>district</code></td><td>Río Alto</td></tr><tr><td><code>month</code></td><td>2026-11</td></tr><tr><td><code>topic</code></td><td>control of money</td></tr><tr><td><code>answer</code></td><td>never · sometimes · often · prefer not to answer</td></tr><tr><td><code>channel</code></td><td>WhatsApp · audio · paper</td></tr><tr><td><code>organization</code></td><td>the organization's code, never the person's</td></tr></table><p class="no" style="margin-top:10px">Names, phone numbers, exact places and original audio are never stored.</p></div>
+<h2>Summary by district · November 2026</h2><div class="grid g3" id="kpis"></div>
+<div class="card"><h3>Share of people who say the situation is common in their community</h3><div style="overflow:auto"><table id="tabla"></table></div><div class="nota">Privacy rule: no figure based on fewer than 5 answers is published.</div></div>
+<div class="card"><h3>Bulletin for the health network</h3><div class="nota ia"><b>AI draft.</b> The organizations review it before it is sent.</div><p>In November, three organizations collected 74 anonymous answers in 5 districts. The most frequent situation is a partner controlling a woman's money, which Peruvian Law 30364 recognizes as economic violence. In Quebrada Verde, 3 out of 4 respondents believe a neighbour would not know where to seek help. These figures are not cases or reports. They show what the community recognizes as common and what never reaches the health post.</p></div>`,
+sugNota:`<b>AI proposal.</b> The leader decides which questions stay. All of them ask about the community, not about the person, and none asks for facts or names.`,
+opts:"Never · Sometimes · Often · Prefer not to answer",publicar:"Publish on WhatsApp and see answers →",
+preg:["In your community, is it common for a partner to control the money a woman earns?","Is it common for a partner to stop a woman from working or studying?","Is it common for a woman to be insulted or humiliated by her partner?","Is it common for a woman to need permission to go to the health post?","Do young women know where to get information on sexual and reproductive health?","If something like this happens to a neighbour, does she know where to go?"],
+resp:"Answer",anon:"anonymous",audio:"transcribed audio",generar:"Generate report →",
+msgs:[{t:"1: Often. 2: Sometimes. 3: Often. 4: Often. 5: No. 6: Don't know"},{t:"1 often, 3 sometimes, 6 no",a:1},{t:"I'm <span class='tach'>Rosa Pérez</span>, my number is <span class='tach'>987 654 321</span>. 1: often, 2: often, 4: sometimes",f:"Name and phone number hidden before saving"},{t:"1 sometimes, 2 never, 3 sometimes, 4 never, 5 yes, 6 yes"},{t:"Not in my home, but in the community the money thing is common (1). The rest, sometimes",a:1},{t:"1: Often. 3: Often. 4: Often. 6: No"},{t:"I prefer not to answer 3. 1 often, 5 no"},{t:"At <span class='tach'>the Huamán family farm</span> it always happens. 1 often, 2 often",f:"Exact place hidden before saving"},{t:"1 never, 2 never, 3 sometimes, 5 yes, 6 yes"},{t:"1: sometimes. 4: often. 6: I don't know where to go",a:1},{t:"1 often, 2 sometimes, 3 often, 4 sometimes, 5 no, 6 no"},{t:"On paper, entered by the leader: 1 often, 3 sometimes, 4 often"}],
+infH:["Situation","n","“Often”","","How the law names it"],
+inf:[["A partner controls the woman's money","Economic violence"],["Insults or humiliation by a partner","Psychological violence"],["Needing permission to go to the health post","Psychological violence (control)"],["Not allowed to work or study","Economic violence"],["A neighbour would know where to go",null]],
+acceso:"access to services",si:"yes",
+lectura:`<b>AI reading (draft).</b> 7 out of 12 people say it is common for a partner to control the money, and Law 30364 recognizes this as economic violence. Only 2 out of 8 believe a neighbour would know where to seek help.`,
+revisa:"The organization reviews the report, takes it to its assembly and decides what to name. Then the data, with no personal information, goes to the shared database.",
+verCon:"See how it connects with the other tools →",
+kpi:["anonymous answers","connected tools","districts"],
+dist:"District",temas:["Control of money","Insults and humiliation","Permission to go to health post","Would not know where to go"],menos:"fewer than 5, not published"
+}};
+const DIST=["Río Alto","Quebrada Verde","San Isidro","Santa Rosa","Nuevo Edén"];
 const DAT={"Río Alto":[[12,7],[10,4],[8,5],[8,6]],"Quebrada Verde":[[18,11],[15,8],[14,6],[12,9]],"San Isidro":[[16,6],[14,5],[9,3],[11,5]],"Santa Rosa":[[14,5],[4,2],[6,2],[9,6]],"Nuevo Edén":[[14,4],[11,3],[3,1],[2,2]]};
-$('#kpis').innerHTML=[[74,"respuestas anónimas"],[3,"herramientas conectadas"],[5,"distritos"]].map(k=>`<div class="card"><div class="big">${k[0]}</div><div style="color:var(--ink2)">${k[1]}</div></div>`).join('');
-$('#tabla').innerHTML=`<tr><th>Distrito</th>${TEMAS.map(t=>`<th>${t}</th>`).join('')}</tr>`+DIST.map(d=>`<tr><td><b>${d}</b></td>${DAT[d].map(([n,s])=>n<5?`<td class="hid">menos de 5, no se publica</td>`:`<td>${Math.round(s/n*100)} % <span style="color:var(--ink3);font-size:12px">(n=${n})</span><div class="bar"><i style="width:${Math.round(s/n*100)}%"></i></div></td>`).join('')}</tr>`).join('');
+const INFN=[[12,7],[10,4],[8,5],[6,2],[8,2]];
+const pct=x=>L==='es'?x+' %':x+'%';
+let vista='inicio';
+function ver(v){vista=v;$$('main>section').forEach(s=>s.classList.toggle('hide',s.id!=='v-'+v));$$('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));window.scrollTo(0,0);if(location.hash!=='#'+v)history.replaceState(null,'','#'+v)}
+function paso(s){['a','b','c'].forEach(x=>$('#d-'+x).classList.toggle('hide',x!==s));$$('#dsteps button').forEach(b=>b.classList.toggle('on',b.dataset.s===s))}
+function render(){
+ const t=T[L];document.documentElement.lang=L;
+ $$('[data-i18n]').forEach(e=>e.textContent=t[e.dataset.i18n]);
+ $('#langBtn').textContent=L==='es'?'EN':'ES';
+ ['inicio','formar','usar','conectar'].forEach(k=>$('#v-'+k).innerHTML=t[k]);
+ $$('[data-go]').forEach(c=>c.onclick=()=>ver(c.dataset.go));
+ $$('#dsteps button').forEach(b=>b.onclick=()=>paso(b.dataset.s));
+ $('#sugerir').onclick=()=>{$('#preguntas').innerHTML=`<div class="nota ia">${t.sugNota}</div><ol class="q">${t.preg.map(p=>`<li>${p}<div class="opts">${t.opts}</div></li>`).join('')}</ol><button class="btn sec" id="pub">${t.publicar}</button>`;$('#pub').onclick=()=>paso('b')};
+ $('#chat').innerHTML=t.msgs.map((m,i)=>`<div class="msg"><div class="who">${t.resp} ${i+1} · ${t.anon}${m.a?' · '+t.audio:''}</div>${m.t}${m.f?`<div class="flag">⚑ ${m.f}</div>`:''}</div>`).join('')+`<div style="text-align:right"><button class="btn sec" id="gen">${t.generar}</button></div>`;
+ $('#gen').onclick=()=>paso('c');
+ $('#informe').innerHTML=`<table><tr>${t.infH.map(h=>`<th>${h}</th>`).join('')}</tr>`+t.inf.map((r,i)=>{const[n,s]=INFN[i];const p=Math.round(s/n*100);return `<tr><td>${r[0]}</td><td>${n}</td><td>${s}${r[1]?'':' '+t.si} (${pct(p)})</td><td><div class="bar"><i style="width:${p}%"></i></div></td><td>${r[1]?`<span class="tipo">${r[1]}</span>`:`<span class="hid">${t.acceso}</span>`}</td></tr>`}).join('')+`</table><div class="nota ia" style="margin-top:14px">${t.lectura}</div><div class="nota">${t.revisa}</div><button class="btn" id="vc">${t.verCon}</button>`;
+ $('#vc').onclick=()=>ver('conectar');
+ $('#kpis').innerHTML=[[74,t.kpi[0]],[3,t.kpi[1]],[5,t.kpi[2]]].map(k=>`<div class="card"><div class="big">${k[0]}</div><div style="color:var(--ink2)">${k[1]}</div></div>`).join('');
+ $('#tabla').innerHTML=`<tr><th>${t.dist}</th>${t.temas.map(x=>`<th>${x}</th>`).join('')}</tr>`+DIST.map(d=>`<tr><td><b>${d}</b></td>${DAT[d].map(([n,s])=>n<5?`<td class="hid">${t.menos}</td>`:`<td>${pct(Math.round(s/n*100))} <span style="color:var(--ink3);font-size:12px">(n=${n})</span><div class="bar"><i style="width:${Math.round(s/n*100)}%"></i></div></td>`).join('')}</tr>`).join('');
+ ver(vista);
+}
+$$('#nav button').forEach(b=>b.onclick=()=>ver(b.dataset.v));
+$('#langBtn').onclick=()=>{L=L==='es'?'en':'es';try{localStorage.setItem('lpa-lang',L)}catch(e){};render()};
+const vh=()=>['formar','usar','conectar'].includes(location.hash.slice(1))?location.hash.slice(1):'inicio';
+window.addEventListener('hashchange',()=>ver(vh()));
+vista=vh();render();
 </script>
 </body>
 </html>
