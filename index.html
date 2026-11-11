@@ -73,14 +73,23 @@ h1{font-size:clamp(28px,3.8vw,44px);max-width:22ch;text-wrap:balance}
 .tchip .ic{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;color:#fff;flex:none}
 .tchip .ic svg{width:22px;height:22px}
 .tchip b{display:block;font-size:15px}.tchip small{font-size:13px;color:var(--ink2)}
-.ev{margin-top:24px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;background:var(--plum);color:#fff;border-radius:20px;padding:18px 24px}
-.ev .lbl{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mag2);max-width:200px}
-.ev .n{display:flex;align-items:baseline;gap:8px}
-.ev .n b{font-size:36px;font-weight:800;line-height:1}.ev .n span{font-size:14px;opacity:.85;max-width:16ch;line-height:1.3}
+.ev{margin-top:24px;background:var(--plum);color:#fff;border-radius:20px;padding:18px 24px}
+.ev .lbl{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mag2);margin-bottom:12px}
+.ev .row3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.ev .n{background:rgba(255,255,255,.1);border-radius:16px;padding:16px 12px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.ev .n b{font-size:36px;font-weight:800;line-height:1}.ev .n span{font-size:14px;opacity:.9;line-height:1.3;max-width:20ch}
 .nums{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.num{border-left:4px solid var(--mag);padding:4px 0 4px 16px}
+.num{background:#fff;border:1.5px solid var(--line);border-radius:16px;padding:18px 12px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
 .num b{font-size:44px;font-weight:800;line-height:1;color:var(--plum);display:block}
-.num span{color:var(--ink2);font-size:14.5px}
+.num span{color:var(--ink2);font-size:14.5px;line-height:1.3}
+.m.ag{background:#fff}.m.me{align-self:flex-end;background:#d9fdd3;border-radius:10px 10px 3px 10px}
+.agchip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#4a33a8;background:#f3effd;border-radius:999px;padding:4px 10px;margin:8px auto 0}
+.rx{display:flex;flex-direction:column;gap:10px}
+.rx div{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;font-size:14.5px}
+.rx q{display:block;color:var(--ink2);font-style:italic;margin-bottom:6px}
+.rx .cat{display:inline-block;font-size:12.5px;font-weight:700;color:#4a33a8;background:#f3effd;border-radius:999px;padding:3px 10px}
+.qlist{display:flex;flex-direction:column;gap:8px}
+.qlist div{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;font-size:15px;font-weight:600}
 /* usar */
 .use{display:grid;grid-template-columns:320px 1fr;gap:40px;margin-top:32px;align-items:start}
 .phone{background:#1b1424;border-radius:36px;padding:12px;box-shadow:0 18px 40px rgba(43,29,63,.25)}
@@ -206,7 +215,7 @@ footer{text-align:center;color:var(--ink2);font-size:13px;padding:0 5vw 32px}
  <div class="kick" data-i18n="k2"></div>
  <h1 data-i18n="h2"></h1>
  <div class="use">
-  <div class="phone"><div class="screen"><div class="wa"><div class="av"><svg><use href="#i-wa"/></svg></div><div><b>Voces de Río Alto</b><small data-i18n="waS"></small></div></div><div class="msgs" id="msgs"></div></div></div>
+  <div><div class="phone"><div class="screen"><div class="wa"><div class="av"><svg><use href="#i-wa"/></svg></div><div><b>Voces de Río Alto</b><small data-i18n="waS"></small></div></div><div class="msgs" id="msgs"></div></div></div><div style="text-align:center"><span class="agchip" id="agchip"></span></div></div>
   <div>
    <div class="steps" id="steps"><button data-s="a" class="on" data-i18n="sa"></button><button data-s="b" data-i18n="sb"></button><button data-s="c" data-i18n="sc"></button></div>
    <div class="panel" id="panel"></div>
@@ -236,13 +245,12 @@ cy:[["Mapear","Mapa de cómo circula la violencia"],["Prototipar","Su herramient
 tools:[["Organización de mujeres de Río Alto","Voces de Río Alto","Encuesta anónima por WhatsApp"],["Lideresas de Quebrada Verde","Radio Quebrada Verde","Respuestas por audio, castellano y awajún"],["Promotoras de Santa Rosa","Ruta Santa Rosa","Encuesta en papel en asamblea"]],
 conn:"Conectada a la base común",
 nums:[["23","líderes"],["6","países"],["11","certificados con su herramienta funcionando"]],
-k2:"Momento 2",h2:"Una herramienta por dentro",waS:"12 respuestas anónimas",sa:"Preguntar",sb:"Recibir",sc:"Nombrar",
-pa:"Una conversación guiada",qLab:"Pregunta 1 de 6",opts:["Nunca","A veces","Seguido","Prefiero no responder"],qInfo:"La IA arma las preguntas detrás y la persona solo toca una respuesta.",pb:"Llegan respuestas sin nombre",pc:"Lo que aparece, con el nombre que le da la ley",
-pbT:"Si alguien menciona un nombre, un teléfono o un lugar, la IA lo oculta antes de guardar.",go3:"Ver cómo se conecta",
-Q:["¿Es común que la pareja controle el dinero de la mujer?","¿Es común que no la dejen trabajar o estudiar?","¿Es común que reciba insultos de su pareja?","¿Necesita permiso para ir al puesto de salud?","¿Las jóvenes saben dónde informarse sobre salud sexual?","¿Una vecina sabría a dónde acudir?"],
-qMsg:"Hola, la organización de mujeres quiere saber qué pasa en la comunidad. Es anónimo. Pregunta 1: ¿es común que la pareja controle el dinero de la mujer?",
-M:["1 seguido, 2 a veces, 3 seguido, 4 seguido, 6 no sé","🎙 1 seguido, 3 a veces, 6 no","Soy {n}, mi número es {t}. 1 seguido, 2 seguido","1 a veces, 2 nunca, 5 sí, 6 sí","En {p} pasa siempre. 1 seguido","📝 En papel: 1 seguido, 3 a veces, 4 seguido"],
-hid:"Dato oculto antes de guardar",
+k2:"Momento 2",h2:"Una herramienta por dentro",waS:"conversación anónima",ag:"Agente de IA: conversa, no usa menús",sa:"Preguntar",sb:"Recibir",sc:"Nombrar",
+pa:"Una conversación, una pregunta a la vez",qInfo:"El agente pregunta, espera la respuesta en palabras de cada mujer y sigue. Estas son las preguntas que guían la conversación:",pb:"Llegan respuestas sin nombre",pc:"Lo que aparece, con el nombre que le da la ley",
+pbT:"La IA oculta nombres, teléfonos y lugares, y ordena cada respuesta en un tema y una frecuencia.",RX:[["A veces, cuando vendo mi cosecha él se queda con la plata.","control del dinero · a veces"],["Para ir a la posta tengo que avisarle y a veces no me deja.","permiso para ir a salud · seguido"],["No sé a dónde iría, aquí no hay nada.","no sabría a dónde acudir"]],go3:"Ver cómo se conecta",
+Q:["¿Es común que tu pareja controle el dinero en la relación?","¿Es común que tu pareja no te deje trabajar o estudiar?","¿Es común que recibas insultos o humillaciones de tu pareja?","¿Necesitas pedir permiso para ir al puesto de salud?","¿Sabes dónde informarte sobre salud sexual y reproductiva?","¿Sabrías a dónde acudir si te pasara algo así?"],
+CV:[["a","Hola, soy la asistente de la Organización de Mujeres de Río Alto. Esta conversación es anónima: no guardo tu nombre ni tu número. ¿Puedo hacerte unas preguntas cortas sobre tu día a día?"],["u","sí, dime"],["a","Gracias. ¿Es común que tu pareja controle el dinero en la relación?"],["u","a veces, cuando vendo mi cosecha él se queda con la plata"],["a","Entiendo, gracias por contarlo. ¿Necesitas pedir permiso para ir al puesto de salud?"],["u","sí, a {n} le tengo que avisar, mi número es {t} por si acaso",1],["a","Gracias. No guardé tu nombre ni tu número. Una última: ¿sabrías a dónde acudir si te pasara algo así?"],["u","no sé"],["a","Lo que cuentas tiene nombre: la ley lo llama violencia económica. No es normal. Puedes llamar gratis a la Línea 100, las 24 horas."]],
+hid:"dato oculto antes de guardar",
 R:[["La pareja controla el dinero",58,"Violencia económica"],["Pedir permiso para ir a salud",63,"Violencia psicológica (control)"],["Insultos de la pareja",40,"Violencia psicológica"],["Sabría a dónde acudir",25,null]],
 access:"Acceso a servicios",
 k3:"Momento 2",h3:"Herramientas distintas, una sola base",fmtH:"Lo que comparten todas",noH:"Lo que nunca se guarda",
@@ -261,13 +269,12 @@ cy:[["Map","Map of how violence is handled"],["Prototype","Her own tool, built w
 tools:[["Río Alto women's organization","Voces de Río Alto","Anonymous WhatsApp survey"],["Quebrada Verde women leaders","Radio Quebrada Verde","Audio answers, Spanish and Awajún"],["Santa Rosa health promoters","Ruta Santa Rosa","Paper survey in assemblies"]],
 conn:"Connected to the shared base",
 nums:[["23","leaders"],["6","countries"],["11","certified with a working tool"]],
-k2:"Stage 2",h2:"Inside one tool",waS:"12 anonymous answers",sa:"Ask",sb:"Receive",sc:"Name it",
-pa:"A guided conversation",qLab:"Question 1 of 6",opts:["Never","Sometimes","Often","Prefer not to say"],qInfo:"AI builds the questions behind the scenes and the person just taps an answer.",pb:"Answers arrive without names",pc:"What appears, named as the law names it",
-pbT:"If someone mentions a name, phone number or place, AI hides it before saving.",go3:"See how it connects",
-Q:["Is it common for a partner to control a woman's money?","Is it common for her not to be allowed to work or study?","Is it common for her partner to insult her?","Does she need permission to visit the health post?","Do young women know where to learn about sexual health?","Would a neighbour know where to go for help?"],
-qMsg:"Hi, the women's organization wants to know what happens in our community. It is anonymous. Question 1: is it common for a partner to control a woman's money?",
-M:["1 often, 2 sometimes, 3 often, 4 often, 6 don't know","🎙 1 often, 3 sometimes, 6 no","I'm {n}, my number is {t}. 1 often, 2 often","1 sometimes, 2 never, 5 yes, 6 yes","At {p} it always happens. 1 often","📝 On paper: 1 often, 3 sometimes, 4 often"],
-hid:"Hidden before saving",
+k2:"Stage 2",h2:"Inside one tool",waS:"anonymous conversation",ag:"AI agent: it talks, no menus",sa:"Ask",sb:"Receive",sc:"Name it",
+pa:"One conversation, one question at a time",qInfo:"The agent asks, waits for each woman's answer in her own words and continues. These questions guide the conversation:",pb:"Answers arrive without names",pc:"What appears, named as the law names it",
+pbT:"AI hides names, phone numbers and places, and sorts each answer into a topic and a frequency.",RX:[["Sometimes, when I sell my harvest he keeps the money.","control of money · sometimes"],["To go to the health post I have to tell him, and sometimes he won't let me.","permission for health · often"],["I don't know where I would go, there is nothing here.","wouldn't know where to go"]],go3:"See how it connects",
+Q:["Is it common for your partner to control the money in your relationship?","Is it common for your partner not to let you work or study?","Is it common for your partner to insult or humiliate you?","Do you need to ask permission to go to the health post?","Do you know where to get information about sexual and reproductive health?","Would you know where to go if something like this happened to you?"],
+CV:[["a","Hi, I am the assistant of the Río Alto Women's Organization. This conversation is anonymous: I do not keep your name or your number. Can I ask you a few short questions about your daily life?"],["u","yes, go ahead"],["a","Thank you. Is it common for your partner to control the money in your relationship?"],["u","sometimes, when I sell my harvest he keeps the money"],["a","I understand, thank you for sharing. Do you need to ask permission to go to the health post?"],["u","yes, I have to tell {n}, my number is {t} just in case",1],["a","Thank you. I did not keep your name or your number. One last question: would you know where to go if something like this happened to you?"],["u","I don't know"],["a","What you describe has a name: the law calls it economic violence. It is not normal. You can call Línea 100, Peru's free helpline, 24 hours a day."]],
+hid:"hidden before saving",
 R:[["Partner controls the money",58,"Economic violence"],["Needs permission to visit health post",63,"Psychological violence (control)"],["Insults from partner",40,"Psychological violence"],["Would know where to go",25,null]],
 access:"Access to services",
 k3:"Stage 2",h3:"Different tools, one shared base",fmtH:"What every tool shares",noH:"What is never stored",
@@ -290,10 +297,10 @@ function render(){
  $("#chips").innerHTML=[["lock","c1"],["spark","c2"],["five","c3"],["phone","c4"]].map(([i,k])=>`<span class="chip ${i==="spark"?"ia":""}">${ic(i)}${t(k)}</span>`).join("");
  $("#cycle").innerHTML=t("cy").map((c,i)=>`<div class="st"><div class="c">${i+1}</div><div class="w">${t("wk")} ${i+1}</div><b>${c[0]}</b><span class="o">${c[1]}</span></div>`).join("");
  $("#cards").innerHTML=t("tools").map((x,i)=>`<div class="tchip"><div class="ic" style="background:${COL[i]}">${ic(TIC[i])}</div><div><b>${x[1]}</b><small>${x[2]}</small></div></div>`).join("");
- $("#nums").innerHTML=`<div class="lbl">${t("evL")}</div>`+t("nums").map(n=>`<div class="n"><b>${n[0]}</b><span>${n[1]}</span></div>`).join("");
+ $("#nums").innerHTML=`<div class="lbl">${t("evL")}</div><div class="row3">`+t("nums").map(n=>`<div class="n"><b>${n[0]}</b><span>${n[1]}</span></div>`).join("")+`</div>`;
  const tach=s=>`<span class="tach">${s}</span>`;
- const M=t("M"),fl=[0,0,1,0,1,0];
- $("#msgs").innerHTML=`<div class="m out">${t("qMsg")}</div><div class="qr">${t("opts").map(o=>`<span>${o}</span>`).join("")}</div>`+M.map((m,i)=>`<div class="m"><div class="meta">#${i+1}</div>${m.replace("{n}",tach("Rosa Pérez")).replace("{t}",tach("987 654 321")).replace("{p}",tach("la chacra de los Huamán"))}${fl[i]?`<div class="flag">● ${t("hid")}</div>`:""}</div>`).join("");
+ $("#msgs").innerHTML=t("CV").map(([w,m,f])=>`<div class="m ${w==="a"?"ag":"me"}">${m.replace("{n}",tach("Juan Pérez")).replace("{t}",tach("987 654 321"))}${f?`<div class="flag">● ${t("hid")}</div>`:""}</div>`).join("");
+ $("#agchip").innerHTML=ic("spark")+t("ag");
  $("#kpis").innerHTML=t("K").map(n=>`<div class="num"><b>${n[0]}</b><span>${n[1]}</span></div>`).join("");
  $("#fmt").innerHTML=t("F").map(f=>`<span>${f}</span>`).join("");
  $("#nofmt").innerHTML=t("N").map(f=>`<span>${f}</span>`).join("");
@@ -306,8 +313,8 @@ function render(){
 function panel(){
  $$("#steps button").forEach(b=>b.classList.toggle("on",b.dataset.s===step));
  const p=$("#panel");
- if(step==="a"){const Q=t("Q");p.innerHTML=`<h2>${t("pa")}</h2><p>${t("qInfo")}</p><div class="qcard"><div class="lab">${t("qLab")}</div><div class="qq">${Q[0]}</div><div class="opts">${t("opts").map((o,i)=>`<span class="${i===2?"sel":""}">${o}</span>`).join("")}</div></div><div class="qrest">${Q.slice(1).map((q,i)=>`<div>${i+2}. ${q}</div>`).join("")}</div><span class="chip ia" style="margin-top:14px">${ic("spark")}${t("c2")}</span>`}
- else if(step==="b")p.innerHTML=`<h2>${t("pb")}</h2><p>${t("pbT")}</p><span class="chip">${ic("lock")}${t("c1")}</span>`;
+ if(step==="a"){p.innerHTML=`<h2>${t("pa")}</h2><p>${t("qInfo")}</p><div class="qlist">${t("Q").map(q=>`<div>${q}</div>`).join("")}</div><span class="chip ia" style="margin-top:14px">${ic("spark")}${t("c2")}</span>`}
+ else if(step==="b")p.innerHTML=`<h2>${t("pb")}</h2><p>${t("pbT")}</p><div class="rx">${t("RX").map(r=>`<div><q>${r[0]}</q><span class="cat">${r[1]}</span></div>`).join("")}</div><span class="chip" style="margin-top:14px">${ic("lock")}${t("c1")}</span>`;
  else p.innerHTML=`<h2>${t("pc")}</h2><div class="rgrid">`+t("R").map(r=>`<div class="rc"><b>${r[1]} %</b><span>${r[0]}</span><span class="law">${r[2]?(L==="es"?"Ley 30364 · ":"Law 30364 · ")+r[2]:t("access")}</span></div>`).join("")+`</div><button class="btn" onclick="ver('conectar')">${t("go3")} →</button>`;
 }
 function ver(v){$$("main>section").forEach(s=>s.classList.toggle("hide",s.id!=="v-"+v));$$("#nav button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));window.scrollTo(0,0);if(location.hash!=="#"+v)history.replaceState(null,"","#"+v)}
