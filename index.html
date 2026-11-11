@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TerritorIA · Lo que pasa aquí</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--plum:#2b1d3f;--plum2:#3d2a57;--mag:#c2457d;--mag2:#f3c4d8;--cream:#f6f1ea;--paper:#fffdf9;--ink:#221a2b;--ink2:#6b5f75;--line:#e6ddd3;
 --t1:#6a4cd1;--t2:#1f8a66;--t3:#d0672b;--ok:#1f8a66}
 *{box-sizing:border-box}
-body{margin:0;font-family:"DM Sans",system-ui,sans-serif;background:var(--cream);color:var(--ink);font-size:16px;line-height:1.5}
-h1,h2,.serif{font-family:"Fraunces",Georgia,serif;letter-spacing:-.02em;line-height:1.05;margin:0}
+body{margin:0;font-family:"Nunito",system-ui,sans-serif;background:var(--cream);color:var(--ink);font-size:16px;line-height:1.5}
+h1,h2,.serif{font-family:"Nunito",system-ui,sans-serif;font-weight:800;letter-spacing:-.01em;line-height:1.15;margin:0}
 header{background:var(--plum);color:#efe8f3;padding:16px 5vw 0}
 .top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.brand{font-family:"Fraunces",serif;font-size:22px;font-weight:700;color:#fff;margin-right:auto}
+.brand{font-size:22px;font-weight:700;color:#fff;margin-right:auto}
 .brand span{color:var(--mag2);font-weight:600}
 .badge{font-size:12px;font-weight:700;background:var(--mag2);color:var(--plum);border-radius:999px;padding:4px 12px}
 .lang{display:inline-flex;background:rgba(255,255,255,.1);border-radius:999px;padding:3px}
@@ -28,14 +28,14 @@ nav button.on .n{background:var(--mag);color:#fff}
 main{max-width:1120px;margin:0 auto;padding:40px 5vw 56px}
 section.hide{display:none}
 .kick{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mag);margin-bottom:10px}
-h1{font-size:clamp(30px,4.4vw,52px);max-width:18ch;text-wrap:balance}
+h1{font-size:clamp(28px,3.8vw,44px);max-width:22ch;text-wrap:balance}
 .sub{font-size:18px;color:var(--ink2);margin:14px 0 0;max-width:52ch}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
 .chip{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:700;border-radius:999px;padding:7px 14px;background:#fff;border:1.5px solid var(--line);color:var(--plum)}
 .chip svg{width:16px;height:16px}
 .chip.ia{border-color:#d9cff7;color:#4a33a8;background:#f3effd}
 /* flow */
-.flow{display:grid;grid-template-columns:1fr 70px 1fr 70px 1fr;align-items:center;margin-top:36px;position:relative}
+.flow{display:grid;grid-template-columns:1fr 72px 220px 72px 1fr;column-gap:8px;align-items:center;margin-top:36px;position:relative}
 .mom{grid-row:1;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);padding-bottom:14px}
 .mom b{display:inline-block;background:var(--plum);color:#fff;border-radius:999px;padding:3px 10px;margin-right:6px;letter-spacing:.04em}
 .mom.m2 b{background:var(--mag)}
@@ -47,10 +47,10 @@ h1{font-size:clamp(30px,4.4vw,52px);max-width:18ch;text-wrap:balance}
 .tl .ic svg{width:24px;height:24px}
 .tl b{display:block;font-size:15px}.tl small{color:var(--ink2);font-size:13px}
 .arrow{display:grid;place-items:center}
-.arrow svg{width:56px;height:24px}
-.db{aspect-ratio:1;max-width:240px;margin:auto;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--plum2),var(--plum) 70%);color:#fff;display:grid;place-items:center;text-align:center;padding:24px;box-shadow:0 0 0 10px #e9dff0}
+.arrow svg{width:48px;height:20px;display:block}
+.db{aspect-ratio:1;width:220px;max-width:220px;margin:auto;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--plum2),var(--plum) 70%);color:#fff;display:grid;place-items:center;text-align:center;padding:24px;border:6px solid #e9dff0;background-clip:padding-box}
 .db svg{width:40px;height:40px;margin:0 auto 6px;display:block}
-.db b{font-family:"Fraunces",serif;font-size:21px;line-height:1.1;display:block}
+.db b{font-weight:800;font-size:20px;line-height:1.1;display:block}
 .db small{font-size:12.5px;opacity:.8}
 .out{background:#fff;border-radius:18px;padding:18px;border:1.5px solid var(--line)}
 .out .h{display:flex;align-items:center;gap:8px;font-weight:700;margin-bottom:12px}
@@ -59,24 +59,27 @@ h1{font-size:clamp(30px,4.4vw,52px);max-width:18ch;text-wrap:balance}
 .mini div{display:grid;grid-template-columns:96px 1fr;gap:8px;align-items:center;font-size:13px}
 .mini i{display:block;height:10px;border-radius:999px;background:var(--mag)}
 /* formar */
-.cycle{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:32px;position:relative}
-.cycle::before{content:"";position:absolute;top:34px;left:12%;right:12%;border-top:2px dashed #c9b8d6}
-.st{text-align:center;position:relative;padding:0 8px}
-.st .c{width:68px;height:68px;border-radius:50%;background:#fff;border:2px solid var(--plum);display:grid;place-items:center;margin:0 auto 12px;color:var(--plum)}
-.st .c svg{width:30px;height:30px}
-.st b{display:block;font-size:17px}.st span{font-size:14px;color:var(--ink2)}
-.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
-.tc{background:#fff;border-radius:20px;overflow:hidden;border:1.5px solid var(--line)}
-.tc .hd{padding:18px;color:#fff;display:flex;gap:12px;align-items:center}
-.tc .hd svg{width:30px;height:30px;flex:none}
-.tc .hd small{display:block;opacity:.85;font-size:12px}
-.tc .hd b{font-family:"Fraunces",serif;font-size:20px;line-height:1.1}
-.tc .bd{padding:14px 18px;font-size:14.5px;color:var(--ink2);min-height:64px}
-.tc .ft svg{width:16px;height:16px;flex:none}
-.tc .ft{padding:10px 18px;font-size:13px;font-weight:700;color:var(--ok);border-top:1.5px solid var(--line);display:flex;gap:6px;align-items:center}
-.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.tline{display:grid;grid-template-columns:repeat(4,1fr);margin-top:32px}
+.st{text-align:center;position:relative;padding:0 12px}
+.st:not(:last-child)::after{content:"";position:absolute;top:28px;left:calc(50% + 36px);right:calc(-50% + 36px);border-top:2px solid #c9b8d6}
+.st .c{width:56px;height:56px;border-radius:50%;background:var(--plum);color:#fff;display:grid;place-items:center;margin:0 auto 12px;font-weight:800;font-size:20px}
+.st .w{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mag)}
+.st b{display:block;font-size:18px;font-weight:800;margin:2px 0 6px}
+.st .o{display:inline-block;font-size:14px;color:var(--plum);background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:8px 12px;line-height:1.35}
+.res{margin-top:32px;background:#fff;border:1.5px solid var(--line);border-radius:20px;padding:20px 24px}
+.res h3{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--plum)}
+.res .row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tchip{display:flex;gap:12px;align-items:center;border-radius:14px;padding:10px 12px;background:var(--cream)}
+.tchip .ic{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;color:#fff;flex:none}
+.tchip .ic svg{width:22px;height:22px}
+.tchip b{display:block;font-size:15px}.tchip small{font-size:13px;color:var(--ink2)}
+.ev{margin-top:24px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;background:var(--plum);color:#fff;border-radius:20px;padding:18px 24px}
+.ev .lbl{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mag2);max-width:200px}
+.ev .n{display:flex;align-items:baseline;gap:8px}
+.ev .n b{font-size:36px;font-weight:800;line-height:1}.ev .n span{font-size:14px;opacity:.85;max-width:16ch;line-height:1.3}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .num{border-left:4px solid var(--mag);padding:4px 0 4px 16px}
-.num b{font-family:"Fraunces",serif;font-size:48px;line-height:1;color:var(--plum);display:block}
+.num b{font-size:44px;font-weight:800;line-height:1;color:var(--plum);display:block}
 .num span{color:var(--ink2);font-size:14.5px}
 /* usar */
 .use{display:grid;grid-template-columns:320px 1fr;gap:40px;margin-top:32px;align-items:start}
@@ -88,6 +91,7 @@ h1{font-size:clamp(30px,4.4vw,52px);max-width:18ch;text-wrap:balance}
 .wa b{font-size:14px;display:block}.wa small{font-size:11.5px;opacity:.75}
 .msgs{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:7px}
 .m{background:#fff;border-radius:10px 10px 10px 3px;padding:7px 10px;font-size:13.5px;max-width:88%;box-shadow:0 1px 0 rgba(0,0,0,.06)}
+.qr{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}.qr span{background:#fff;border:1.5px solid #c9b8e6;color:#4a33a8;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700}
 .m.out{align-self:flex-end;background:#e9dcf6;border-radius:10px 10px 3px 10px}
 .m .meta{font-size:11px;color:#8a7f92;margin-bottom:2px}
 .tach{background:var(--plum);color:transparent;border-radius:3px;padding:0 3px;user-select:none}
@@ -100,9 +104,21 @@ h1{font-size:clamp(30px,4.4vw,52px);max-width:18ch;text-wrap:balance}
 .panel p{color:var(--ink2);margin:0 0 16px}
 .q{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
 .q .k{flex:none;width:26px;height:26px;border-radius:50%;background:#f3effd;color:#4a33a8;font-weight:700;font-size:13px;display:grid;place-items:center}
-.bars{display:flex;flex-direction:column;gap:14px}
+.qcard{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:18px;margin-bottom:14px}
+.qcard .lab{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#4a33a8;margin-bottom:8px}
+.qcard .qq{font-size:18px;font-weight:700;margin-bottom:12px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts span{border:1.5px solid #d9cff7;color:#4a33a8;background:#f3effd;border-radius:999px;padding:7px 14px;font-weight:700;font-size:14px}
+.opts span.sel{background:#4a33a8;color:#fff;border-color:#4a33a8}
+.qrest{font-size:14px;color:var(--ink2)}
+.qrest div{padding:6px 0;border-bottom:1px solid var(--line)}
+.rgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rc{background:#fff;border:1.5px solid var(--line);border-radius:16px;padding:16px}
+.rc b{display:block;font-size:40px;font-weight:800;line-height:1;color:var(--mag)}
+.rc span{display:block;font-size:14.5px;margin:6px 0 8px;font-weight:600}
+.rc span.law{display:inline-block;font-weight:700;font-size:12px;margin:0}
 .bar .l{display:flex;justify-content:space-between;gap:10px;font-size:14.5px;margin-bottom:5px}
-.bar .l b{font-family:"Fraunces",serif;font-size:20px;color:var(--plum)}
+.bar .l b{font-size:20px;color:var(--plum)}
 .bar .t{height:14px;border-radius:999px;background:#efe3ea;overflow:hidden}
 .bar .t i{display:block;height:100%;background:var(--mag);border-radius:999px}
 .law{display:inline-block;font-size:12px;font-weight:700;color:#7a1f4c;background:#fbe3ee;border-radius:999px;padding:2px 9px;margin-top:5px}
@@ -114,18 +130,19 @@ h1{font-size:clamp(30px,4.4vw,52px);max-width:18ch;text-wrap:balance}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px}
 .box{background:#fff;border-radius:20px;padding:22px;border:1.5px solid var(--line)}
 .box h3{margin:0 0 4px;font-size:17px}
-.heat{width:100%;border-collapse:separate;border-spacing:4px;margin-top:20px;font-size:13.5px}
-.heat th{font-weight:700;color:var(--ink2);text-align:left;font-size:12.5px;padding:4px}
-.heat td{border-radius:8px;padding:12px 8px;text-align:center;font-weight:700}
+.heat{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:6px;margin-top:16px;font-size:14px}
+.heat th{font-weight:700;color:var(--ink2);text-align:center;font-size:12.5px;padding:4px 6px;white-space:normal;line-height:1.25;vertical-align:bottom}.heat th:first-child{text-align:left;width:22%}
+.heat td{border-radius:12px;padding:14px 6px;text-align:center;font-weight:800;font-size:15px}
 .heat td.d{text-align:left;background:none;color:var(--plum)}
 .heat td.x{background:repeating-linear-gradient(45deg,#f1ece6,#f1ece6 6px,#e6ddd3 6px,#e6ddd3 12px);color:transparent}
 .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--ink2);margin-top:10px}
 .legend i{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:5px}
 footer{text-align:center;color:var(--ink2);font-size:13px;padding:0 5vw 32px}
 @media(max-width:860px){
+ .rgrid{grid-template-columns:1fr}.flow .db{width:200px}
  .flow{display:flex;flex-direction:column}.flow .arrow{transform:rotate(90deg);padding:10px 0}.mom.m1{order:1}.flow>.tools{order:2}.flow>.a1{order:3}.mom.m2{order:4;padding-top:6px}.flow>.db{order:5;max-width:200px}.flow>.arrow:not(.a1){order:6}.flow>.out{order:7}
- .cycle{grid-template-columns:1fr 1fr;row-gap:24px}.cycle::before{display:none}
- .cards3,.nums,.two,.use{grid-template-columns:1fr}.phone{max-width:320px;margin:0 auto}
+ .tline{grid-template-columns:1fr 1fr;row-gap:24px}.st::after{display:none}.res .row{grid-template-columns:1fr}
+ .nums,.two,.use{grid-template-columns:1fr}.phone{max-width:320px;margin:0 auto}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -180,9 +197,9 @@ footer{text-align:center;color:var(--ink2);font-size:13px;padding:0 5vw 32px}
 <section id="v-formar" class="hide">
  <div class="kick" data-i18n="k1"></div>
  <h1 data-i18n="h1"></h1>
- <div class="cycle" id="cycle"></div>
- <div class="cards3" id="cards"></div>
- <div class="nums" id="nums"></div>
+ <div class="tline" id="cycle"></div>
+ <div class="res"><h3 data-i18n="resH"></h3><div class="row" id="cards"></div></div>
+ <div class="ev" id="nums"></div>
 </section>
 
 <section id="v-usar" class="hide">
@@ -215,15 +232,15 @@ k0:"Equilibria · Yunkawasi · Amazonas, Perú",h0:"Cada lideresa construye su h
 m1:"1",m1t:"Formar",m2:"2",m2t:"Usar e interconectar",db:"Base común anónima",dbs:"un solo formato",out:"Red de salud",
 c1:"Anónimo",c2:"La IA propone, la lideresa decide",c3:"Nada con menos de 5 respuestas se publica",c4:"Promueve la Línea 100",
 k1:"Momento 1",h1:"Cuatro semanas para construir su propia herramienta",
-cy:[["Mapear","cómo circula hoy la violencia"],["Prototipar","su herramienta con IA"],["Compartir","la prueba con su organización"],["Sostener","la publica y la conecta"]],
+cy:[["Mapear","Mapa de cómo circula la violencia"],["Prototipar","Su herramienta, hecha con IA"],["Compartir","Prueba con su organización"],["Sostener","Herramienta conectada a la base común"]],wk:"Semana",resH:"Resultado: una herramienta distinta por comunidad",evL:"Probado en el piloto 2026 de TerritorIA",
 tools:[["Organización de mujeres de Río Alto","Voces de Río Alto","Encuesta anónima por WhatsApp"],["Lideresas de Quebrada Verde","Radio Quebrada Verde","Respuestas por audio, castellano y awajún"],["Promotoras de Santa Rosa","Ruta Santa Rosa","Encuesta en papel en asamblea"]],
 conn:"Conectada a la base común",
-nums:[["23","líderes en el primer ciclo de TerritorIA, 2026"],["6","países"],["11","terminaron con su herramienta funcionando"]],
+nums:[["23","líderes"],["6","países"],["11","certificados con su herramienta funcionando"]],
 k2:"Momento 2",h2:"Una herramienta por dentro",waS:"12 respuestas anónimas",sa:"Preguntar",sb:"Recibir",sc:"Nombrar",
-pa:"La IA sugiere, la lideresa elige",pb:"Llegan respuestas sin nombre",pc:"Lo que aparece, con el nombre que le da la ley",
+pa:"Una conversación guiada",qLab:"Pregunta 1 de 6",opts:["Nunca","A veces","Seguido","Prefiero no responder"],qInfo:"La IA arma las preguntas detrás y la persona solo toca una respuesta.",pb:"Llegan respuestas sin nombre",pc:"Lo que aparece, con el nombre que le da la ley",
 pbT:"Si alguien menciona un nombre, un teléfono o un lugar, la IA lo oculta antes de guardar.",go3:"Ver cómo se conecta",
 Q:["¿Es común que la pareja controle el dinero de la mujer?","¿Es común que no la dejen trabajar o estudiar?","¿Es común que reciba insultos de su pareja?","¿Necesita permiso para ir al puesto de salud?","¿Las jóvenes saben dónde informarse sobre salud sexual?","¿Una vecina sabría a dónde acudir?"],
-qMsg:"Hola, la organización de mujeres quiere saber qué pasa en la comunidad. Tus respuestas son anónimas. Responde del 1 al 6: nunca, a veces o seguido.",
+qMsg:"Hola, la organización de mujeres quiere saber qué pasa en la comunidad. Es anónimo. Pregunta 1: ¿es común que la pareja controle el dinero de la mujer?",
 M:["1 seguido, 2 a veces, 3 seguido, 4 seguido, 6 no sé","🎙 1 seguido, 3 a veces, 6 no","Soy {n}, mi número es {t}. 1 seguido, 2 seguido","1 a veces, 2 nunca, 5 sí, 6 sí","En {p} pasa siempre. 1 seguido","📝 En papel: 1 seguido, 3 a veces, 4 seguido"],
 hid:"Dato oculto antes de guardar",
 R:[["La pareja controla el dinero",58,"Violencia económica"],["Pedir permiso para ir a salud",63,"Violencia psicológica (control)"],["Insultos de la pareja",40,"Violencia psicológica"],["Sabría a dónde acudir",25,null]],
@@ -240,15 +257,15 @@ k0:"Equilibria · Yunkawasi · Amazonas, Peru",h0:"Each leader builds her own to
 m1:"1",m1t:"Train",m2:"2",m2t:"Use and interconnect",db:"Shared anonymous base",dbs:"one single format",out:"Health network",
 c1:"Anonymous",c2:"AI suggests, the leader decides",c3:"Nothing under 5 answers is published",c4:"Promotes Línea 100, Peru's free helpline",
 k1:"Stage 1",h1:"Four weeks to build their own tool",
-cy:[["Map","how violence is handled today"],["Prototype","their tool with AI"],["Share","test it with their organization"],["Sustain","publish and connect it"]],
+cy:[["Map","Map of how violence is handled"],["Prototype","Her own tool, built with AI"],["Share","Tested with her organization"],["Sustain","Tool connected to the shared base"]],wk:"Week",resH:"Result: a different tool for each community",evL:"Tested in TerritorIA's 2026 pilot",
 tools:[["Río Alto women's organization","Voces de Río Alto","Anonymous WhatsApp survey"],["Quebrada Verde women leaders","Radio Quebrada Verde","Audio answers, Spanish and Awajún"],["Santa Rosa health promoters","Ruta Santa Rosa","Paper survey in assemblies"]],
 conn:"Connected to the shared base",
-nums:[["23","leaders in TerritorIA's first cycle, 2026"],["6","countries"],["11","finished with a working tool"]],
+nums:[["23","leaders"],["6","countries"],["11","certified with a working tool"]],
 k2:"Stage 2",h2:"Inside one tool",waS:"12 anonymous answers",sa:"Ask",sb:"Receive",sc:"Name it",
-pa:"AI suggests, the leader chooses",pb:"Answers arrive without names",pc:"What appears, named as the law names it",
+pa:"A guided conversation",qLab:"Question 1 of 6",opts:["Never","Sometimes","Often","Prefer not to say"],qInfo:"AI builds the questions behind the scenes and the person just taps an answer.",pb:"Answers arrive without names",pc:"What appears, named as the law names it",
 pbT:"If someone mentions a name, phone number or place, AI hides it before saving.",go3:"See how it connects",
 Q:["Is it common for a partner to control a woman's money?","Is it common for her not to be allowed to work or study?","Is it common for her partner to insult her?","Does she need permission to visit the health post?","Do young women know where to learn about sexual health?","Would a neighbour know where to go for help?"],
-qMsg:"Hi, the women's organization wants to know what happens in our community. Your answers are anonymous. Answer 1 to 6: never, sometimes or often.",
+qMsg:"Hi, the women's organization wants to know what happens in our community. It is anonymous. Question 1: is it common for a partner to control a woman's money?",
 M:["1 often, 2 sometimes, 3 often, 4 often, 6 don't know","🎙 1 often, 3 sometimes, 6 no","I'm {n}, my number is {t}. 1 often, 2 often","1 sometimes, 2 never, 5 yes, 6 yes","At {p} it always happens. 1 often","📝 On paper: 1 often, 3 sometimes, 4 often"],
 hid:"Hidden before saving",
 R:[["Partner controls the money",58,"Economic violence"],["Needs permission to visit health post",63,"Psychological violence (control)"],["Insults from partner",40,"Psychological violence"],["Would know where to go",25,null]],
@@ -271,12 +288,12 @@ function render(){
  $("#tools0").innerHTML=t("tools").map((x,i)=>`<div class="tl"><div class="ic" style="background:${COL[i]}">${ic(TIC[i])}</div><div><b>${x[1]}</b><small>${x[2]}</small></div></div>`).join("");
  $("#mini").innerHTML=[["Río Alto",58],["Quebrada Verde",61],["San Isidro",38],["Santa Rosa",36]].map(d=>`<div><span>${d[0]}</span><i style="width:${d[1]}%"></i></div>`).join("");
  $("#chips").innerHTML=[["lock","c1"],["spark","c2"],["five","c3"],["phone","c4"]].map(([i,k])=>`<span class="chip ${i==="spark"?"ia":""}">${ic(i)}${t(k)}</span>`).join("");
- $("#cycle").innerHTML=t("cy").map((c,i)=>`<div class="st"><div class="c">${ic(["map","build","share","sustain"][i])}</div><b>${c[0]}</b><span>${c[1]}</span></div>`).join("");
- $("#cards").innerHTML=t("tools").map((x,i)=>`<div class="tc"><div class="hd" style="background:${COL[i]}">${ic(TIC[i])}<div><small>${x[0]}</small><b>${x[1]}</b></div></div><div class="bd">${x[2]}</div><div class="ft">${ic("check")}${t("conn")}</div></div>`).join("");
- $("#nums").innerHTML=t("nums").map(n=>`<div class="num"><b>${n[0]}</b><span>${n[1]}</span></div>`).join("");
+ $("#cycle").innerHTML=t("cy").map((c,i)=>`<div class="st"><div class="c">${i+1}</div><div class="w">${t("wk")} ${i+1}</div><b>${c[0]}</b><span class="o">${c[1]}</span></div>`).join("");
+ $("#cards").innerHTML=t("tools").map((x,i)=>`<div class="tchip"><div class="ic" style="background:${COL[i]}">${ic(TIC[i])}</div><div><b>${x[1]}</b><small>${x[2]}</small></div></div>`).join("");
+ $("#nums").innerHTML=`<div class="lbl">${t("evL")}</div>`+t("nums").map(n=>`<div class="n"><b>${n[0]}</b><span>${n[1]}</span></div>`).join("");
  const tach=s=>`<span class="tach">${s}</span>`;
  const M=t("M"),fl=[0,0,1,0,1,0];
- $("#msgs").innerHTML=`<div class="m out">${t("qMsg")}</div>`+M.map((m,i)=>`<div class="m"><div class="meta">#${i+1}</div>${m.replace("{n}",tach("Rosa Pérez")).replace("{t}",tach("987 654 321")).replace("{p}",tach("la chacra de los Huamán"))}${fl[i]?`<div class="flag">● ${t("hid")}</div>`:""}</div>`).join("");
+ $("#msgs").innerHTML=`<div class="m out">${t("qMsg")}</div><div class="qr">${t("opts").map(o=>`<span>${o}</span>`).join("")}</div>`+M.map((m,i)=>`<div class="m"><div class="meta">#${i+1}</div>${m.replace("{n}",tach("Rosa Pérez")).replace("{t}",tach("987 654 321")).replace("{p}",tach("la chacra de los Huamán"))}${fl[i]?`<div class="flag">● ${t("hid")}</div>`:""}</div>`).join("");
  $("#kpis").innerHTML=t("K").map(n=>`<div class="num"><b>${n[0]}</b><span>${n[1]}</span></div>`).join("");
  $("#fmt").innerHTML=t("F").map(f=>`<span>${f}</span>`).join("");
  $("#nofmt").innerHTML=t("N").map(f=>`<span>${f}</span>`).join("");
@@ -289,9 +306,9 @@ function render(){
 function panel(){
  $$("#steps button").forEach(b=>b.classList.toggle("on",b.dataset.s===step));
  const p=$("#panel");
- if(step==="a")p.innerHTML=`<h2>${t("pa")}</h2><span class="chip ia" style="margin-bottom:12px">${ic("spark")}${t("c2")}</span>`+t("Q").map((q,i)=>`<div class="q"><span class="k">${i+1}</span>${q}</div>`).join("");
+ if(step==="a"){const Q=t("Q");p.innerHTML=`<h2>${t("pa")}</h2><p>${t("qInfo")}</p><div class="qcard"><div class="lab">${t("qLab")}</div><div class="qq">${Q[0]}</div><div class="opts">${t("opts").map((o,i)=>`<span class="${i===2?"sel":""}">${o}</span>`).join("")}</div></div><div class="qrest">${Q.slice(1).map((q,i)=>`<div>${i+2}. ${q}</div>`).join("")}</div><span class="chip ia" style="margin-top:14px">${ic("spark")}${t("c2")}</span>`}
  else if(step==="b")p.innerHTML=`<h2>${t("pb")}</h2><p>${t("pbT")}</p><span class="chip">${ic("lock")}${t("c1")}</span>`;
- else p.innerHTML=`<h2>${t("pc")}</h2><div class="bars">`+t("R").map(r=>`<div class="bar"><div class="l"><span>${r[0]}</span><b>${r[1]} %</b></div><div class="t"><i style="width:${r[1]}%"></i></div><span class="law">${r[2]?(L==="es"?"Ley 30364 · ":"Law 30364 · ")+r[2]:t("access")}</span></div>`).join("")+`</div><button class="btn" onclick="ver('conectar')">${t("go3")} →</button>`;
+ else p.innerHTML=`<h2>${t("pc")}</h2><div class="rgrid">`+t("R").map(r=>`<div class="rc"><b>${r[1]} %</b><span>${r[0]}</span><span class="law">${r[2]?(L==="es"?"Ley 30364 · ":"Law 30364 · ")+r[2]:t("access")}</span></div>`).join("")+`</div><button class="btn" onclick="ver('conectar')">${t("go3")} →</button>`;
 }
 function ver(v){$$("main>section").forEach(s=>s.classList.toggle("hide",s.id!=="v-"+v));$$("#nav button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));window.scrollTo(0,0);if(location.hash!=="#"+v)history.replaceState(null,"","#"+v)}
 $$("#nav button").forEach(b=>b.onclick=()=>ver(b.dataset.v));
