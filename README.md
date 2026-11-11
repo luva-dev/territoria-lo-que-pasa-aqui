@@ -4,8 +4,12 @@ Open platform by Equilibria (Peru) where community women leaders use AI to make 
 
 Built on TerritorIA, Equilibria's AI acceleration program for community leaders. Pilot, April 2026: 23 participants from 6 Latin American countries and 20 organizations; 11 certified, each presenting a working AI-built product.
 
+## How it works: two moments
+1. **Train**: through the TerritorIA cycle (map, prototype, share, sustain), each woman leader builds her own AI-assisted tool from an open template, adapted to her community (WhatsApp survey, community radio, paper and assembly).
+2. **Use and interconnect**: every tool, however different, writes anonymous data in the same shared format to one common database (Supabase). Health networks see one territorial dashboard.
+
 ## This demo (synthetic data)
-Four accelerators for women leaders in Amazonas, Peru:
+What the tools do:
 1. **Anonymous community diagnostic**: AI suggests non-revictimizing survey questions; responses arrive via WhatsApp, paper or audio; AI transcribes and strikes identifying data before storage; aggregate report names findings per Peruvian Law 30364.
 2. **Name it**: local-language radio spots, posters and messages drafted by AI, reviewed by the organization.
 3. **Local service route**: district page with existing services (Línea 100, CEM, health post).

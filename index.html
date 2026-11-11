@@ -10,63 +10,76 @@
 body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--cream);color:var(--ink);font-size:16px;line-height:1.5}
 header{background:var(--navy);color:#fff;padding:18px 5vw 0}
 .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-.brand{font-weight:700;font-size:20px;letter-spacing:-.01em}
-.brand span{color:var(--acc2);font-weight:500}
+.brand{font-weight:700;font-size:20px}.brand span{color:var(--acc2);font-weight:500}
 .demo{font-size:12px;font-weight:600;background:#fbe7f0;color:#7a1f4c;border-radius:999px;padding:4px 12px}
 nav{display:flex;gap:4px;margin-top:14px;overflow-x:auto}
 nav button{font:inherit;font-size:15px;border:0;background:transparent;color:#d9d2e3;padding:10px 14px;border-radius:10px 10px 0 0;cursor:pointer;white-space:nowrap}
 nav button.on{background:var(--cream);color:var(--navy);font-weight:600}
-main{padding:24px 5vw 48px;max-width:1100px;margin:0 auto}
+main{padding:24px 5vw 48px;max-width:1120px;margin:0 auto}
 h1{font-size:clamp(26px,3.4vw,40px);line-height:1.1;margin:4px 0 10px;letter-spacing:-.02em}
-h2{font-size:22px;margin:0 0 8px}
-h3{font-size:17px;margin:0 0 6px}
-p{margin:0 0 10px}
+h2{font-size:22px;margin:0 0 8px}h3{font-size:17px;margin:0 0 6px}p{margin:0 0 10px}
 .k{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);font-weight:700}
-.lead{font-size:18px;color:var(--ink2);max-width:60ch}
+.lead{font-size:18px;color:var(--ink2);max-width:64ch}
 .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-bottom:16px}
-.grid{display:grid;gap:14px}
-.g4{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
-.g2{grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
-.acc-card{cursor:pointer;transition:border-color .15s}
-.acc-card:hover{border-color:var(--acc)}
-.num{display:inline-flex;width:28px;height:28px;border-radius:999px;background:var(--navy);color:#fff;font-size:13px;font-weight:700;align-items:center;justify-content:center;margin-bottom:8px}
-.ciclo{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
-.ciclo div{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:600;color:var(--navy)}
-.ciclo div::after{content:" →";color:var(--ink3);font-weight:400}
-.ciclo div:last-child::after{content:""}
+.grid{display:grid;gap:14px}.g3{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}.g2{grid-template-columns:repeat(auto-fill,minmax(360px,1fr))}
 .nota{font-size:14px;color:var(--ink2);border-left:3px solid var(--acc);padding:6px 12px;background:#fbf2f6;border-radius:0 8px 8px 0;margin:10px 0}
-.ia{border-left-color:var(--ia);background:#f4f1fc}
-.ia b{color:var(--ia)}
-.steps{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
-.steps button{font:inherit;font-size:14px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;cursor:pointer;color:var(--ink)}
-.steps button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.ia{border-left-color:var(--ia);background:#f4f1fc}.ia b{color:var(--ia)}
 .btn{font:inherit;font-size:15px;font-weight:600;border:0;background:var(--acc);color:#fff;border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn.sec{background:#fff;color:var(--navy);border:1px solid var(--line)}
-select{font:inherit;font-size:15px;padding:8px 10px;border:1px solid var(--line);border-radius:9px;background:#fff}
-ol.q{padding-left:22px;margin:10px 0}
-ol.q li{margin-bottom:8px}
-.opts{font-size:13px;color:var(--ink3)}
-.chat{background:#e9e4dc;border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:8px;max-height:520px;overflow:auto}
-.msg{background:#fff;border-radius:10px 10px 10px 2px;padding:8px 12px;max-width:85%;font-size:14.5px;box-shadow:0 1px 1px rgba(0,0,0,.06)}
-.msg .who{font-size:12px;color:var(--ink3);margin-bottom:2px}
-.msg.audio .who::before{content:"🎙 audio transcrito · "}
-.tach{background:#2b1d3f;color:#2b1d3f;border-radius:3px;padding:0 4px;position:relative}
-.tach::after{content:"tachado";position:absolute;left:0;right:0;top:-1px;color:#fff;font-size:11px;text-align:center}
-.flag{font-size:12.5px;color:#7a1f4c;margin-top:4px}
+/* dos momentos */
+.mom{display:grid;grid-template-columns:1fr 60px 1fr;gap:0;align-items:stretch;margin:18px 0}
+.mom .m{background:#fff;border:2px solid var(--line);border-radius:18px;padding:20px 22px;cursor:pointer}
+.mom .m:hover{border-color:var(--acc)}
+.mom .m .tag{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--navy);border-radius:999px;padding:3px 12px;margin-bottom:8px}
+.mom .m.dos .tag{background:var(--acc)}
+.mom .arr{display:flex;align-items:center;justify-content:center;font-size:30px;color:var(--ink3)}
+.mom ul{margin:6px 0 0;padding-left:18px;color:var(--ink2);font-size:15px}
+/* ciclo */
+.ciclo{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0}
+.ciclo div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}
+.ciclo b{display:block;color:var(--navy)}
+.ciclo span{font-size:14px;color:var(--ink2)}
+/* herramientas de lideresas */
+.tool{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column}
+.tool .hd{padding:16px 18px;color:#fff}
+.tool .hd small{opacity:.8;font-size:12px}
+.tool .hd div{font-weight:700;font-size:19px;margin-top:2px}
+.tool .bd{padding:14px 18px;font-size:14.5px;flex:1}
+.tool .bd ul{margin:4px 0 8px;padding-left:18px}
+.tool .ft{padding:10px 18px;background:#eef8f3;color:#085041;font-size:13px;font-weight:600;border-top:1px solid #cfe9dd}
+.tool .who{font-size:12.5px;color:var(--ink3)}
+/* interconexión */
+.flujo{display:grid;grid-template-columns:1fr 50px 1fr 50px 1fr;align-items:center;gap:0;margin:16px 0}
+.flujo .col{display:flex;flex-direction:column;gap:8px}
+.flujo .box{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:14px}
+.flujo .db{background:var(--navy);color:#fff;border-radius:16px;padding:18px;text-align:center}
+.flujo .db b{font-size:18px;display:block}
+.flujo .db span{font-size:13px;opacity:.85}
+.flujo .arr{text-align:center;font-size:26px;color:var(--ink3)}
+.flujo .out .box{border-left:4px solid var(--acc)}
 table{width:100%;border-collapse:collapse;font-size:14.5px}
 th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
 th{background:#f0eef2;font-size:13px}
-.bar{height:10px;background:#f0e3ea;border-radius:999px;overflow:hidden;min-width:80px}
-.bar i{display:block;height:100%;background:var(--acc)}
+code{font-family:ui-monospace,monospace;font-size:13px;background:#f0eef2;border-radius:5px;padding:1px 6px}
+.no{color:#7a1f4c;font-weight:600}
+.bar{height:10px;background:#f0e3ea;border-radius:999px;overflow:hidden;min-width:70px}.bar i{display:block;height:100%;background:var(--acc)}
 .hid{color:var(--ink3);font-size:12.5px;font-style:italic}
-.tipo{display:inline-block;font-size:12px;font-weight:600;border-radius:999px;padding:2px 9px;background:#fbe7f0;color:#7a1f4c;margin-right:4px}
-.serv{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)}
-.serv .ic{width:44px;height:44px;border-radius:12px;background:#fbe7f0;display:flex;align-items:center;justify-content:center;font-size:20px}
-.ej{font-size:11.5px;font-weight:600;color:var(--ink3);border:1px dashed var(--ink3);border-radius:6px;padding:1px 6px;margin-left:6px}
-.real{font-size:11.5px;font-weight:600;color:var(--ok);border:1px solid var(--ok);border-radius:6px;padding:1px 6px;margin-left:6px}
 .big{font-size:34px;font-weight:700;color:var(--navy);line-height:1}
+.tipo{display:inline-block;font-size:12px;font-weight:600;border-radius:999px;padding:2px 9px;background:#fbe7f0;color:#7a1f4c}
+/* herramienta por dentro */
+.steps{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+.steps button{font:inherit;font-size:14px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;cursor:pointer}
+.steps button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+ol.q{padding-left:22px;margin:10px 0}ol.q li{margin-bottom:8px}.opts{font-size:13px;color:var(--ink3)}
+.chat{background:#e9e4dc;border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:8px;max-height:460px;overflow:auto}
+.msg{background:#fff;border-radius:10px 10px 10px 2px;padding:8px 12px;max-width:85%;font-size:14.5px}
+.msg .who{font-size:12px;color:var(--ink3);margin-bottom:2px}
+.tach{background:#2b1d3f;color:#2b1d3f;border-radius:3px;padding:0 4px;position:relative}
+.tach::after{content:"tachado";position:absolute;left:0;right:0;top:-1px;color:#fff;font-size:11px;text-align:center}
+.flag{font-size:12.5px;color:#7a1f4c;margin-top:4px}
 .hide{display:none}
 footer{text-align:center;color:var(--ink3);font-size:13px;padding:0 5vw 30px}
+@media(max-width:820px){.mom,.flujo{grid-template-columns:1fr}.mom .arr,.flujo .arr{transform:rotate(90deg);padding:6px 0}.ciclo{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -76,195 +89,156 @@ footer{text-align:center;color:var(--ink3);font-size:13px;padding:0 5vw 30px}
     <div class="demo">Demo · datos ficticios</div>
   </div>
   <nav id="nav">
-    <button data-v="inicio" class="on">Inicio</button>
-    <button data-v="diag">1. Diagnóstico anónimo</button>
-    <button data-v="nombrar">2. Nombrar</button>
-    <button data-v="ruta">3. Ruta local</button>
-    <button data-v="tablero">4. Tablero territorial</button>
+    <button data-v="inicio" class="on">Cómo funciona</button>
+    <button data-v="formar">1 · Formar</button>
+    <button data-v="usar">2 · Usar una herramienta</button>
+    <button data-v="conectar">3 · Interconectar</button>
   </nav>
 </header>
 <main>
 
-<!-- INICIO -->
 <section id="v-inicio">
   <div class="k">Equilibria · Perú · Amazonas</div>
-  <h1>Hacer visible lo que está normalizado</h1>
-  <p class="lead">Lideresas y promotoras comunitarias usan IA para levantar, nombrar y compartir, de forma anónima y agregada, la violencia de género y las necesidades de salud sexual y reproductiva que hoy no se ven. Lo que levantan llega como dato de salud pública a la red de salud y vuelve a la comunidad en su lengua.</p>
-  <div class="nota">No es un canal de denuncia y no reemplaza a la Línea 100 ni al CEM: promueve los servicios que ya existen.</div>
-  <h3 style="margin-top:20px">El ciclo de TerritorIA</h3>
-  <div class="ciclo"><div>Mapear</div><div>Prototipar</div><div>Compartir</div><div>Sostener</div></div>
-  <h3 style="margin-top:20px">Cuatro aceleradores para lideresas</h3>
-  <div class="grid g4">
-    <div class="card acc-card" data-go="diag"><div class="num">1</div><h3>Diagnóstico anónimo</h3><p>Cuestionario corto por WhatsApp, papel o audio. Nada identificable se guarda.</p></div>
-    <div class="card acc-card" data-go="nombrar"><div class="num">2</div><h3>Nombrar</h3><p>Piezas en la lengua de la comunidad: esto tiene nombre y no es normal.</p></div>
-    <div class="card acc-card" data-go="ruta"><div class="num">3</div><h3>Ruta local</h3><p>La página del distrito con los servicios que sí existen.</p></div>
-    <div class="card acc-card" data-go="tablero"><div class="num">4</div><h3>Tablero territorial</h3><p>Datos agregados por distrito para la red de salud y el gobierno regional.</p></div>
+  <h1>Cada lideresa construye su herramienta. Todas alimentan la misma base.</h1>
+  <p class="lead">En la Amazonía peruana, la violencia contra las mujeres y las necesidades de salud sexual y reproductiva están normalizadas: no se nombran ni se registran. TerritorIA forma a lideresas comunitarias para que construyan, con IA, sus propias herramientas para hacerlas visibles. Cada herramienta es distinta, porque cada comunidad lo es, pero todas guardan los datos anónimos con el mismo formato y en una sola base. Así nace una red de información comunitaria para la salud pública.</p>
+  <div class="mom">
+    <div class="m uno" data-go="formar">
+      <span class="tag">Momento 1 · Formar</span>
+      <h3>La lideresa construye su herramienta</h3>
+      <ul><li>Ciclo TerritorIA de 4 semanas</li><li>Parte de lo que pasa en su comunidad</li><li>Con IA arma su encuesta, su página y sus mensajes, a su manera</li></ul>
+    </div>
+    <div class="arr">→</div>
+    <div class="m dos" data-go="conectar">
+      <span class="tag">Momento 2 · Usar e interconectar</span>
+      <h3>Las herramientas forman una red</h3>
+      <ul><li>La comunidad responde de forma anónima</li><li>Todas las herramientas escriben en la misma base, con el mismo formato</li><li>La red de salud ve un tablero por distrito</li></ul>
+    </div>
   </div>
-  <div class="nota ia"><b>Dónde entra la IA:</b> propone preguntas, transcribe audios, tacha datos identificables, agrega y redacta informes. <b>No</b> decide qué es violencia, no identifica personas, no diagnostica casos. La lideresa y su organización deciden siempre.</div>
+  <div class="nota">No es un canal de denuncia ni reemplaza a la Línea 100 o al CEM: los promueve. Hace visible lo que hoy no llega a ningún servicio.</div>
+  <div class="nota ia"><b>Dónde entra la IA:</b> ayuda a la lideresa a construir su herramienta, propone preguntas que no revictimizan, transcribe audios, tacha datos personales antes de guardar y redacta informes agregados. <b>No</b> decide qué es violencia, no identifica personas, no diagnostica casos.</div>
 </section>
 
-<!-- DIAGNOSTICO -->
-<section id="v-diag" class="hide">
-  <div class="k">Acelerador 1</div>
-  <h1>Diagnóstico comunitario anónimo</h1>
-  <p class="lead">Organización de mujeres de ejemplo · Distrito Río Alto (ficticio)</p>
-  <div class="steps" id="dsteps">
-    <button data-s="a" class="on">a. Armar cuestionario</button>
-    <button data-s="b">b. Respuestas recibidas</button>
-    <button data-s="c">c. Informe agregado</button>
+<section id="v-formar" class="hide">
+  <div class="k">Momento 1</div>
+  <h1>Formar: cada lideresa construye su herramienta</h1>
+  <p class="lead">El método de TerritorIA, probado en 2026 con 23 líderes de 6 países (11 certificados, cada uno con su producto funcionando), aplicado a un solo propósito: hacer visible lo que está normalizado.</p>
+  <div class="ciclo">
+    <div><b>Semana 1 · Mapear</b><span>Dibuja cómo circula hoy la violencia en su comunidad: quién se entera, quién calla, dónde se pierde.</span></div>
+    <div><b>Semana 2 · Prototipar</b><span>Con IA arma su herramienta desde la plantilla común: encuesta, página, mensajes, en su lengua.</span></div>
+    <div><b>Semana 3 · Compartir</b><span>La prueba con su organización y la ajusta con la cohorte.</span></div>
+    <div><b>Semana 4 · Sostener</b><span>La publica, queda conectada a la base común y define quién la mantiene.</span></div>
   </div>
+  <h2 style="margin-top:22px">Tres herramientas, tres comunidades, una misma base</h2>
+  <p style="color:var(--ink2)">Ejemplos ficticios de lo que construyen tres lideresas al terminar el ciclo.</p>
+  <div class="grid g3">
+    <div class="tool"><div class="hd" style="background:#5b3fb8"><small>Organización de mujeres de Río Alto</small><div>Voces de Río Alto</div></div>
+      <div class="bd"><p>Encuesta anónima por WhatsApp al número de la organización.</p><ul><li>6 preguntas en castellano</li><li>Informe mensual para la asamblea</li><li>Mensajes para grupos de WhatsApp</li></ul><p class="who">Canal principal: WhatsApp</p></div>
+      <div class="ft">✓ Escribe en la base común</div></div>
+    <div class="tool"><div class="hd" style="background:#1d7a5f"><small>Lideresas de Quebrada Verde</small><div>Radio Quebrada Verde</div></div>
+      <div class="bd"><p>Spots en la radio comunal que invitan a responder por audio.</p><ul><li>Preguntas en castellano y awajún</li><li>La IA transcribe los audios</li><li>Spot que nombra lo encontrado</li></ul><p class="who">Canal principal: radio y audio</p></div>
+      <div class="ft">✓ Escribe en la base común</div></div>
+    <div class="tool"><div class="hd" style="background:#c0612b"><small>Promotoras de Santa Rosa</small><div>Ruta Santa Rosa</div></div>
+      <div class="bd"><p>Encuesta en papel en asambleas y página con los servicios del distrito.</p><ul><li>La promotora carga las respuestas</li><li>Ruta local: Línea 100, CEM, puesto de salud</li><li>Afiche para el local comunal</li></ul><p class="who">Canal principal: papel y asamblea</p></div>
+      <div class="ft">✓ Escribe en la base común</div></div>
+  </div>
+  <div class="nota ia"><b>Lo que hace distinta a la plataforma:</b> no entrega una app cerrada. Entrega una plantilla abierta y el método para que cada lideresa la adapte a su comunidad, sin perder la conexión con las demás.</div>
+  <button class="btn" onclick="ver('usar')">Ver una herramienta por dentro →</button>
+</section>
 
+<section id="v-usar" class="hide">
+  <div class="k">Momento 2 · Usar</div>
+  <h1>Una herramienta por dentro: Voces de Río Alto</h1>
+  <p class="lead">Lo que hace la lideresa cada mes con la herramienta que construyó.</p>
+  <div class="steps" id="dsteps">
+    <button data-s="a" class="on">a. Preguntar</button>
+    <button data-s="b">b. Recibir respuestas anónimas</button>
+    <button data-s="c">c. Nombrar lo que aparece</button>
+  </div>
   <div id="d-a" class="card">
-    <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center">
-      <h2>¿Qué quieres conocer en tu comunidad?</h2>
-      <select id="lang"><option value="es">Castellano</option><option value="aw">Awajún (pendiente de validación con hablantes)</option></select>
-    </div>
-    <p style="color:var(--ink2)">Tema elegido por la organización: <b>violencia en la pareja y control del dinero</b>.</p>
+    <h2>¿Qué quiere conocer la organización este mes?</h2>
+    <p style="color:var(--ink2)">Tema elegido en asamblea: <b>violencia en la pareja y control del dinero</b>.</p>
     <button class="btn" id="sugerir">Sugerir preguntas con IA</button>
     <div id="preguntas"></div>
   </div>
-
   <div id="d-b" class="card hide">
-    <h2>Respuestas recibidas por WhatsApp, papel y audio</h2>
-    <p style="color:var(--ink2)">12 respuestas · número exclusivo de la organización · no se guarda el remitente</p>
+    <h2>Respuestas por WhatsApp, papel y audio</h2>
+    <p style="color:var(--ink2)">12 respuestas · número exclusivo de la organización · no se guarda quién envía</p>
     <div class="chat" id="chat"></div>
-    <div class="nota ia"><b>La IA</b> transcribe los audios y tacha nombres, teléfonos y lugares exactos <b>antes de guardar</b>. La lideresa confirma el tachado.</div>
+    <div class="nota ia"><b>La IA</b> transcribe audios y tacha nombres, teléfonos y lugares exactos <b>antes de guardar</b>. La lideresa confirma.</div>
   </div>
-
   <div id="d-c" class="card hide">
-    <h2>Informe agregado</h2>
-    <p style="color:var(--ink2)">12 respuestas · Distrito Río Alto · noviembre 2026</p>
+    <h2>Informe del mes</h2>
     <div id="informe"></div>
   </div>
 </section>
 
-<!-- NOMBRAR -->
-<section id="v-nombrar" class="hide">
-  <div class="k">Acelerador 2</div>
-  <h1>Nombrar</h1>
-  <p class="lead">Del informe a piezas en la lengua de la comunidad. Un solo mensaje: esto tiene nombre y no es normal.</p>
-  <div class="grid g2">
-    <div class="card">
-      <h3>Spot para la radio comunal (30 segundos)</h3>
-      <div class="nota ia"><b>Borrador de la IA</b> · la organización revisa y ajusta</div>
-      <p>"Vecina: si tu pareja te quita el dinero que ganas, decide en qué lo gastas o no te deja trabajar, eso tiene nombre. La ley lo llama <b>violencia económica</b>. No es normal y no estás sola. Llama gratis a la Línea 100, las 24 horas. Un mensaje de la organización de mujeres de tu comunidad."</p>
+<section id="v-conectar" class="hide">
+  <div class="k">Momento 2 · Interconectar</div>
+  <h1>Herramientas distintas, una sola base anónima</h1>
+  <p class="lead">Un repositorio abierto, una base de datos común y un formato compartido. Cada herramienta se ve como su comunidad quiere, pero guarda los datos igual.</p>
+  <div class="flujo">
+    <div class="col">
+      <div class="box">📱 Voces de Río Alto</div>
+      <div class="box">📻 Radio Quebrada Verde</div>
+      <div class="box">📝 Ruta Santa Rosa</div>
+      <div class="box" style="color:var(--ink3)">+ las de cada nueva cohorte</div>
     </div>
-    <div class="card">
-      <h3>Mensaje para grupos de WhatsApp</h3>
-      <div class="nota ia"><b>Borrador de la IA</b> · no usa casos reales</div>
-      <p>"En nuestra comunidad, 7 de cada 12 mujeres que respondieron dicen que es común que la pareja controle el dinero. Eso tiene nombre: violencia económica. Si te pasa o le pasa a alguien que conoces, la Línea 100 orienta gratis las 24 horas. 💜"</p>
-    </div>
-    <div class="card">
-      <h3>Afiche para el local comunal</h3>
-      <div style="background:var(--navy);color:#fff;border-radius:12px;padding:22px;text-align:center">
-        <div style="font-size:13px;letter-spacing:.1em;color:var(--acc2)">ESTO TIENE NOMBRE</div>
-        <div style="font-size:24px;font-weight:700;margin:8px 0">Si te quitan tu plata,<br>es violencia económica.</div>
-        <div style="font-size:15px">No es normal. Línea 100 · gratis · 24 horas</div>
-      </div>
+    <div class="arr">→</div>
+    <div class="db"><b>Base común anónima</b><span>un solo formato · sin datos personales · cada organización es dueña de lo suyo</span></div>
+    <div class="arr">→</div>
+    <div class="col out">
+      <div class="box"><b>Red de salud y DIRESA</b><br>tablero por distrito</div>
+      <div class="box"><b>Establecimiento de salud</b><br>boletín de su ámbito</div>
+      <div class="box"><b>Organizaciones</b><br>su propio informe y la comparación con otras</div>
     </div>
   </div>
-</section>
-
-<!-- RUTA -->
-<section id="v-ruta" class="hide">
-  <div class="k">Acelerador 3</div>
-  <h1>Ruta local · Distrito Río Alto</h1>
-  <p class="lead">Los servicios que ya existen, cómo llegar y qué pasa cuando llamas. La plataforma los promueve; no los intermedia.</p>
   <div class="card">
-    <div class="serv"><div class="ic">📞</div><div><h3>Línea 100 <span class="real">dato real</span></h3><p>Orientación gratuita del Ministerio de la Mujer, las 24 horas, todos los días. Marca 100 desde cualquier celular o fijo.</p></div></div>
-    <div class="serv"><div class="ic">🏛</div><div><h3>Centro Emergencia Mujer (CEM) <span class="ej">dato de ejemplo</span></h3><p>Atención legal, psicológica y social. Lunes a viernes, 8:00 a 16:00. Plaza principal de la capital de provincia.</p></div></div>
-    <div class="serv"><div class="ic">🏥</div><div><h3>Puesto de salud Río Alto <span class="ej">dato de ejemplo</span></h3><p>Consejería en salud sexual y reproductiva, atención prenatal. Lunes a sábado, 8:00 a 14:00. Confirmado por la obstetra del puesto.</p></div></div>
-    <div class="serv"><div class="ic">👧</div><div><h3>DEMUNA <span class="ej">dato de ejemplo</span></h3><p>Para niñas, niños y adolescentes. Municipalidad distrital, lunes a viernes.</p></div></div>
-    <div class="serv"><div class="ic">🛡</div><div><h3>Comisaría <span class="ej">dato de ejemplo</span></h3><p>Recibe denuncias las 24 horas.</p></div></div>
+    <h3>El formato común (lo único que todas las herramientas comparten)</h3>
+    <table>
+      <tr><th>Campo</th><th>Ejemplo</th></tr>
+      <tr><td><code>distrito</code></td><td>Río Alto</td></tr>
+      <tr><td><code>mes</code></td><td>2026-11</td></tr>
+      <tr><td><code>tema</code></td><td>control del dinero</td></tr>
+      <tr><td><code>respuesta</code></td><td>nunca · a veces · seguido · prefiero no responder</td></tr>
+      <tr><td><code>canal</code></td><td>WhatsApp · audio · papel</td></tr>
+      <tr><td><code>organizacion</code></td><td>código de la organización, no de la persona</td></tr>
+    </table>
+    <p class="no" style="margin-top:10px">Nunca se guarda: nombre, teléfono, lugar exacto, audio original.</p>
   </div>
-  <div class="nota ia"><b>La IA</b> arma esta página a partir de un formulario que llena la lideresa. <b>No</b> agrega servicios que ella no confirmó.</div>
-</section>
-
-<!-- TABLERO -->
-<section id="v-tablero" class="hide">
-  <div class="k">Acelerador 4</div>
-  <h1>Tablero territorial anónimo</h1>
-  <p class="lead">Lo que levantan las organizaciones, sumado por distrito. Para la red de salud, el establecimiento y el gobierno regional.</p>
-  <div class="grid g4" id="kpis"></div>
+  <h2>Tablero territorial · noviembre 2026</h2>
+  <div class="grid g3" id="kpis"></div>
   <div class="card">
-    <h3>Mujeres que responden que la situación es común en su comunidad, por distrito</h3>
+    <h3>Porcentaje que dice que la situación es común en su comunidad</h3>
     <div style="overflow:auto"><table id="tabla"></table></div>
-    <div class="nota">Regla de privacidad: no se publica ninguna celda con menos de 5 respuestas. Cada organización decide qué comparte.</div>
+    <div class="nota">Regla de privacidad: ninguna celda con menos de 5 respuestas se publica.</div>
   </div>
   <div class="card">
-    <h3>Boletín mensual · noviembre 2026</h3>
+    <h3>Boletín para la red de salud</h3>
     <div class="nota ia"><b>Borrador de la IA</b> · revisado por las organizaciones antes de enviarse</div>
-    <p>En noviembre, 5 organizaciones de mujeres levantaron 74 respuestas anónimas en 5 distritos. La situación más mencionada es el <b>control del dinero por la pareja (violencia económica)</b>, seguida de <b>insultos y humillaciones (violencia psicológica)</b>. En Río Alto y Quebrada Verde, más de la mitad de quienes respondieron dicen que es común. En Santa Rosa y Nuevo Edén hubo menos de 5 respuestas en algunos temas, por lo que no se publican.</p>
-    <p><b>Para la red de salud:</b> estos datos no son casos ni denuncias; muestran lo que la comunidad reconoce como común y que no llega al establecimiento.</p>
+    <p>Tres organizaciones levantaron 74 respuestas anónimas en 5 distritos. Lo más mencionado es el control del dinero por la pareja, que la Ley 30364 reconoce como violencia económica. En Quebrada Verde, 3 de cada 4 personas que respondieron dicen que una vecina no sabría a dónde acudir. Estos datos no son casos ni denuncias: muestran lo que la comunidad reconoce y que no llega al establecimiento.</p>
   </div>
 </section>
 </main>
 <footer>TerritorIA · Equilibria Conservación para la Paz S.A.C. · Demo con datos ficticios · Código abierto (MIT)</footer>
-
 <script>
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
 function ver(v){$$('main>section').forEach(s=>s.classList.toggle('hide',s.id!=='v-'+v));$$('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));window.scrollTo(0,0);if(location.hash!=='#'+v)history.replaceState(null,'','#'+v)}
 $$('#nav button').forEach(b=>b.onclick=()=>ver(b.dataset.v));
 $$('[data-go]').forEach(c=>c.onclick=()=>ver(c.dataset.go));
-const vh=()=>['diag','nombrar','ruta','tablero'].includes(location.hash.slice(1))?location.hash.slice(1):'inicio';
+const vh=()=>['formar','usar','conectar'].includes(location.hash.slice(1))?location.hash.slice(1):'inicio';
 window.addEventListener('hashchange',()=>ver(vh()));ver(vh());
-
-// pasos diagnóstico
 function paso(s){['a','b','c'].forEach(x=>$('#d-'+x).classList.toggle('hide',x!==s));$$('#dsteps button').forEach(b=>b.classList.toggle('on',b.dataset.s===s))}
 $$('#dsteps button').forEach(b=>b.onclick=()=>paso(b.dataset.s));
-
-const PREG=[
- "En tu comunidad, ¿es común que la pareja controle el dinero que gana la mujer?",
- "¿Es común que la pareja no deje a la mujer trabajar o estudiar?",
- "¿Es común que una mujer reciba insultos o humillaciones de su pareja?",
- "¿Es común que una mujer tenga que pedir permiso para ir al puesto de salud?",
- "¿Las jóvenes saben dónde recibir información sobre salud sexual y reproductiva?",
- "Si a una vecina le pasa algo de esto, ¿sabe a dónde acudir?"
-];
-$('#sugerir').onclick=()=>{
-  const aw=$('#lang').value==='aw';
-  $('#preguntas').innerHTML=`<div class="nota ia"><b>Propuesta de la IA</b> · la lideresa decide cuáles quedan. Reglas aplicadas: preguntas sobre la comunidad, no sobre la persona; sin pedir hechos concretos ni nombres.</div>`+
-  (aw?`<div class="nota">La traducción al awajún se valida con hablantes de la organización antes de usarse. Este demo no muestra texto en awajún para no inventarlo.</div>`:'')+
-  `<ol class="q">${PREG.map(p=>`<li>${p}<div class="opts">Nunca · A veces · Seguido · Prefiero no responder</div></li>`).join('')}</ol>
-  <button class="btn sec" onclick="paso('b')">Aprobar y ver respuestas →</button>`;
-};
-
-const MSGS=[
- {t:"1: Seguido. 2: A veces. 3: Seguido. 4: Seguido. 5: No. 6: No sé"},
- {t:"Respondo: 1 seguido, 3 a veces, 6 no",a:1},
- {t:"Soy <span class='tach'>Rosa Pérez</span>, mi número es <span class='tach'>987 654 321</span>. 1: seguido, 2: seguido, 4: a veces",f:"Nombre y teléfono tachados antes de guardar"},
- {t:"1 a veces 2 nunca 3 a veces 4 nunca 5 sí 6 sí"},
- {t:"Aquí en mi casa no, pero en la comunidad sí es seguido lo del dinero (1). Lo demás a veces",a:1},
- {t:"1: Seguido. 3: Seguido. 4: Seguido. 6: No"},
- {t:"Prefiero no responder la 3. 1 seguido, 5 no"},
- {t:"En <span class='tach'>la chacra de los Huamán</span> pasa siempre. 1 seguido, 2 seguido",f:"Lugar exacto tachado antes de guardar"},
- {t:"1 nunca, 2 nunca, 3 a veces, 5 sí, 6 sí"},
- {t:"1: a veces. 4: seguido. 6: no sé a dónde ir",a:1},
- {t:"1 seguido 2 a veces 3 seguido 4 a veces 5 no 6 no"},
- {t:"Respuesta en papel, cargada por la lideresa: 1 seguido, 3 a veces, 4 seguido"}
-];
-$('#chat').innerHTML=MSGS.map((m,i)=>`<div class="msg ${m.a?'audio':''}"><div class="who">Respuesta ${i+1} · anónima</div>${m.t}${m.f?`<div class="flag">⚑ ${m.f}</div>`:''}</div>`).join('')+`<div style="text-align:right"><button class="btn sec" onclick="paso('c')">Generar informe →</button></div>`;
-
-const INF=[
- {p:"La pareja controla el dinero de la mujer",n:12,s:7,v:5,tipo:"Violencia económica o patrimonial"},
- {p:"Insultos o humillaciones de la pareja",n:10,s:4,v:5,tipo:"Violencia psicológica"},
- {p:"Pedir permiso para ir al puesto de salud",n:8,s:5,v:2,tipo:"Violencia psicológica (control)"},
- {p:"No dejan trabajar o estudiar",n:6,s:2,v:2,tipo:"Violencia económica o patrimonial"},
- {p:"Saben a dónde acudir",n:8,s:2,v:0,tipo:null,inv:true}
-];
-$('#informe').innerHTML=`<table><tr><th>Situación</th><th>Respuestas</th><th>"Seguido"</th><th></th><th>Cómo lo nombra la ley</th></tr>`+
- INF.map(r=>`<tr><td>${r.p}</td><td>${r.n}</td><td>${r.inv?r.s+' sí':r.s} (${Math.round(r.s/r.n*100)} %)</td><td><div class="bar"><i style="width:${Math.round(r.s/r.n*100)}%"></i></div></td><td>${r.tipo?`<span class="tipo">${r.tipo}</span>`:'<span class="hid">Acceso a servicios</span>'}</td></tr>`).join('')+`</table>
- <div class="nota ia" style="margin-top:14px"><b>Lectura de la IA (borrador):</b> en Río Alto, 7 de 12 mujeres dicen que es común que la pareja controle el dinero; la Ley 30364 lo reconoce como violencia económica o patrimonial. Solo 2 de 8 dicen que una vecina sabría a dónde acudir: la ruta local es prioritaria.</div>
- <div class="nota">La IA no identifica personas ni casos individuales y no recomienda denunciar a nadie. La organización revisa el informe antes de compartirlo.</div>
- <button class="btn sec" onclick="ver('nombrar')">Nombrar lo encontrado →</button>`;
-
-// tablero
-const DIST=["Río Alto","Quebrada Verde","San Isidro","Santa Rosa","Nuevo Edén"];
-const TEMAS=["Control del dinero","Insultos y humillaciones","Pedir permiso para ir a salud","No saben a dónde acudir"];
+const PREG=["En tu comunidad, ¿es común que la pareja controle el dinero que gana la mujer?","¿Es común que la pareja no deje a la mujer trabajar o estudiar?","¿Es común que una mujer reciba insultos o humillaciones de su pareja?","¿Es común que una mujer tenga que pedir permiso para ir al puesto de salud?","¿Las jóvenes saben dónde informarse sobre salud sexual y reproductiva?","Si a una vecina le pasa algo de esto, ¿sabe a dónde acudir?"];
+$('#sugerir').onclick=()=>{$('#preguntas').innerHTML=`<div class="nota ia"><b>Propuesta de la IA</b> · la lideresa decide cuáles quedan. Preguntas sobre la comunidad, no sobre la persona; sin pedir hechos ni nombres.</div><ol class="q">${PREG.map(p=>`<li>${p}<div class="opts">Nunca · A veces · Seguido · Prefiero no responder</div></li>`).join('')}</ol><button class="btn sec" onclick="paso('b')">Publicar en WhatsApp y ver respuestas →</button>`};
+const MSGS=[{t:"1: Seguido. 2: A veces. 3: Seguido. 4: Seguido. 5: No. 6: No sé"},{t:"1 seguido, 3 a veces, 6 no",a:1},{t:"Soy <span class='tach'>Rosa Pérez</span>, mi número es <span class='tach'>987 654 321</span>. 1: seguido, 2: seguido, 4: a veces",f:"Nombre y teléfono tachados antes de guardar"},{t:"1 a veces 2 nunca 3 a veces 4 nunca 5 sí 6 sí"},{t:"En mi casa no, pero en la comunidad sí es seguido lo del dinero (1). Lo demás a veces",a:1},{t:"1: Seguido. 3: Seguido. 4: Seguido. 6: No"},{t:"Prefiero no responder la 3. 1 seguido, 5 no"},{t:"En <span class='tach'>la chacra de los Huamán</span> pasa siempre. 1 seguido, 2 seguido",f:"Lugar exacto tachado antes de guardar"},{t:"1 nunca, 2 nunca, 3 a veces, 5 sí, 6 sí"},{t:"1: a veces. 4: seguido. 6: no sé a dónde ir",a:1},{t:"1 seguido 2 a veces 3 seguido 4 a veces 5 no 6 no"},{t:"En papel, cargada por la lideresa: 1 seguido, 3 a veces, 4 seguido"}];
+$('#chat').innerHTML=MSGS.map((m,i)=>`<div class="msg"><div class="who">Respuesta ${i+1} · anónima${m.a?' · audio transcrito':''}</div>${m.t}${m.f?`<div class="flag">⚑ ${m.f}</div>`:''}</div>`).join('')+`<div style="text-align:right"><button class="btn sec" onclick="paso('c')">Generar informe →</button></div>`;
+const INF=[{p:"La pareja controla el dinero de la mujer",n:12,s:7,tipo:"Violencia económica"},{p:"Insultos o humillaciones de la pareja",n:10,s:4,tipo:"Violencia psicológica"},{p:"Pedir permiso para ir al puesto de salud",n:8,s:5,tipo:"Violencia psicológica (control)"},{p:"No dejan trabajar o estudiar",n:6,s:2,tipo:"Violencia económica"},{p:"Una vecina sabría a dónde acudir",n:8,s:2,tipo:null}];
+$('#informe').innerHTML=`<table><tr><th>Situación</th><th>n</th><th>"Seguido"</th><th></th><th>Cómo lo nombra la ley</th></tr>`+INF.map(r=>{const p=Math.round(r.s/r.n*100);return `<tr><td>${r.p}</td><td>${r.n}</td><td>${r.s} (${p} %)</td><td><div class="bar"><i style="width:${p}%"></i></div></td><td>${r.tipo?`<span class="tipo">${r.tipo}</span>`:'<span class="hid">acceso a servicios</span>'}</td></tr>`}).join('')+`</table><div class="nota ia" style="margin-top:14px"><b>Lectura de la IA (borrador):</b> 7 de 12 dicen que es común que la pareja controle el dinero; la Ley 30364 lo reconoce como violencia económica. Solo 2 de 8 creen que una vecina sabría a dónde acudir.</div><div class="nota">La organización revisa el informe, lo lleva a su asamblea y decide qué nombrar. Los datos, ya sin nada personal, pasan a la base común.</div><button class="btn" onclick="ver('conectar')">Ver cómo se conecta con las demás →</button>`;
+const DIST=["Río Alto","Quebrada Verde","San Isidro","Santa Rosa","Nuevo Edén"],TEMAS=["Control del dinero","Insultos y humillaciones","Pedir permiso para ir a salud","No sabría a dónde acudir"];
 const DAT={"Río Alto":[[12,7],[10,4],[8,5],[8,6]],"Quebrada Verde":[[18,11],[15,8],[14,6],[12,9]],"San Isidro":[[16,6],[14,5],[9,3],[11,5]],"Santa Rosa":[[14,5],[4,2],[6,2],[9,6]],"Nuevo Edén":[[14,4],[11,3],[3,1],[2,2]]};
-const tot=DIST.reduce((a,d)=>a+DAT[d][0][0],0);
-$('#kpis').innerHTML=[[tot,"respuestas anónimas"],[5,"organizaciones de mujeres"],[5,"distritos"],[5,"rutas locales publicadas"]].map(k=>`<div class="card"><div class="big">${k[0]}</div><div style="color:var(--ink2)">${k[1]}</div></div>`).join('');
-$('#tabla').innerHTML=`<tr><th>Distrito</th>${TEMAS.map(t=>`<th>${t}</th>`).join('')}</tr>`+DIST.map(d=>`<tr><td><b>${d}</b></td>${DAT[d].map(([n,s])=>n<5?`<td class="hid">menos de 5 respuestas, no se publica</td>`:`<td>${Math.round(s/n*100)} % <span style="color:var(--ink3);font-size:12px">(n=${n})</span><div class="bar"><i style="width:${Math.round(s/n*100)}%"></i></div></td>`).join('')}</tr>`).join('');
+$('#kpis').innerHTML=[[74,"respuestas anónimas"],[3,"herramientas conectadas"],[5,"distritos"]].map(k=>`<div class="card"><div class="big">${k[0]}</div><div style="color:var(--ink2)">${k[1]}</div></div>`).join('');
+$('#tabla').innerHTML=`<tr><th>Distrito</th>${TEMAS.map(t=>`<th>${t}</th>`).join('')}</tr>`+DIST.map(d=>`<tr><td><b>${d}</b></td>${DAT[d].map(([n,s])=>n<5?`<td class="hid">menos de 5, no se publica</td>`:`<td>${Math.round(s/n*100)} % <span style="color:var(--ink3);font-size:12px">(n=${n})</span><div class="bar"><i style="width:${Math.round(s/n*100)}%"></i></div></td>`).join('')}</tr>`).join('');
 </script>
 </body>
 </html>
